@@ -1,0 +1,325 @@
+TUglyTetris
+v7
+r0
+t324696769.650715
+cCheck dependencies
+cProcessInfoPlistFile /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/Info.plist UglyTetris/UglyTetris-Info.plist
+cProcessPCH /var/folders/gt/gtVBA6p+Go4eA1faph+FEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UglyTetris-Prefix-canygybusscsoteohpgayhpacace/UglyTetris-Prefix.pch.gch UglyTetris/UglyTetris-Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/main.o /Users/lokistudios/458/UglyTetris/UglyTetris/main.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/UglyTetrisAppDelegate.o /Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisAppDelegate.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/UglyTetrisViewController.o /Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/TetrisEngine.o /Users/lokistudios/458/UglyTetris/UglyTetris/TetrisEngine.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cLd /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/UglyTetris normal i386
+cGenerateDSYMFile /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app.dSYM /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/UglyTetris
+cCopyStringsFile /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/en.lproj/InfoPlist.strings UglyTetris/en.lproj/InfoPlist.strings
+cCompileXIB /Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/MainWindow.xib
+cCompileXIB /Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib
+cTouch /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
+c000000004CB3FA080000000000001ADD
+t1286863368
+s6877
+
+N/Users/lokistudios/458/UglyTetris/UglyTetris/TetrisEngine.h
+c000000004DAA42A0000000000000047C
+t1303003808
+s1148
+i<Foundation/Foundation.h>
+
+N/Users/lokistudios/458/UglyTetris/UglyTetris/TetrisEngine.m
+c000000004DAA42A00000000000001C76
+t1303003808
+s7286
+i"TetrisEngine.h"
+
+N/Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetris-Prefix.pch
+c000000004DAA42A00000000000000146
+t1303003808
+s326
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisAppDelegate.h
+c000000004DAA42A000000000000001E0
+t1303003808
+s480
+i<UIKit/UIKit.h>
+i"TetrisEngine.h"
+
+N/Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisAppDelegate.m
+c000000004DAA42A000000000000009CD
+t1303003808
+s2509
+i"UglyTetrisAppDelegate.h"
+i"UglyTetrisViewController.h"
+
+N/Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisViewController.h
+c000000004DAA42A0000000000000021F
+t1303003808
+s543
+i<UIKit/UIKit.h>
+i"TetrisEngine.h"
+
+N/Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisViewController.m
+c000000004DAA42A00000000000000F32
+t1303003808
+s3890
+i"UglyTetrisViewController.h"
+
+N/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/InfoPlist.strings
+c000000004DAA429F000000000000002D
+t1303003807
+s45
+
+N/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/MainWindow.xib
+c000000004DAA429F0000000000004E3D
+t1303003807
+s20029
+
+N/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib
+c000000004DAA429F0000000000005FB8
+t1303003807
+s24504
+
+N/Users/lokistudios/458/UglyTetris/UglyTetris/main.m
+c000000004DAA42A00000000000000165
+t1303003808
+s357
+i<UIKit/UIKit.h>
+
+N/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app
+t1303003969
+s204
+
+N/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app.dSYM
+t1303003968
+s102
+
+N/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/Info.plist
+t1303003966
+s803
+
+N/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/PkgInfo
+t1303003966
+s8
+
+N/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/UglyTetris
+t1303003968
+s31524
+
+N/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/en.lproj/InfoPlist.strings
+t1303003968
+s42
+
+N/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/en.lproj/MainWindow.nib
+t1303003969
+s1687
+
+N/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/en.lproj/UglyTetrisViewController.nib
+t1303003969
+s5948
+
+N/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/TetrisEngine.o
+t1303003967
+s21208
+
+N/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/UglyTetris.LinkFileList
+c000000004DAA433E0000000000000219
+t1303003966
+s537
+
+N/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/UglyTetrisAppDelegate.o
+t1303003967
+s48544
+
+N/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/UglyTetrisViewController.o
+t1303003968
+s45204
+
+N/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/main.o
+t1303003967
+s3084
+
+N/var/folders/gt/gtVBA6p+Go4eA1faph+FEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UglyTetris-Prefix-canygybusscsoteohpgayhpacace/UglyTetris-Prefix.pch.gch
+t1303003967
+s11992272
+
+NUglyTetris/UglyTetris-Info.plist
+c000000004DAA429F00000000000004B1
+t1303003807
+s1201
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies324696766#324696766#0(0"0(0#1#0"3343187568374212096#0"0#
+
+CCompileC build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/TetrisEngine.o /Users/lokistudios/458/UglyTetris/UglyTetris/TetrisEngine.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s324696767.834870
+e324696767.985261
+r1
+xCompileC
+xbuild/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/TetrisEngine.o
+x/Users/lokistudios/458/UglyTetris/UglyTetris/TetrisEngine.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@67"Compile /Users/lokistudios/458/UglyTetris/UglyTetris/TetrisEngine.m324696767#324696767#0(0"0(0#0#59"/Users/lokistudios/458/UglyTetris/UglyTetris/TetrisEngine.m8607024576#2097"    cd /Users/lokistudios/458/UglyTetris    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-generated-files.hmap -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-own-target-headers.hmap -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-all-target-headers.hmap -iquote /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-project-headers.hmap -F/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator -I/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/include -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/DerivedSources/i386 -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/gt/gtVBA6p+Go4eA1faph+FEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UglyTetris-Prefix-canygybusscsoteohpgayhpacace/UglyTetris-Prefix.pch -c /Users/lokistudios/458/UglyTetris/UglyTetris/TetrisEngine.m -o /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/TetrisEngine.o0#
+
+CCompileC build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/UglyTetrisAppDelegate.o /Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisAppDelegate.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s324696767.652471
+e324696767.834753
+r1
+xCompileC
+xbuild/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/UglyTetrisAppDelegate.o
+x/Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@76"Compile /Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisAppDelegate.m324696767#324696767#0(0"0(0#0#68"/Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisAppDelegate.m8608315424#2115"    cd /Users/lokistudios/458/UglyTetris    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-generated-files.hmap -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-own-target-headers.hmap -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-all-target-headers.hmap -iquote /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-project-headers.hmap -F/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator -I/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/include -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/DerivedSources/i386 -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/gt/gtVBA6p+Go4eA1faph+FEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UglyTetris-Prefix-canygybusscsoteohpgayhpacace/UglyTetris-Prefix.pch -c /Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisAppDelegate.m -o /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/UglyTetrisAppDelegate.o0#
+
+CCompileC build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/UglyTetrisViewController.o /Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s324696767.812023
+e324696768.058797
+r1
+xCompileC
+xbuild/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/UglyTetrisViewController.o
+x/Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@79"Compile /Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisViewController.m324696767#324696768#0(0"0(0#0#71"/Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisViewController.m8607234848#2121"    cd /Users/lokistudios/458/UglyTetris    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-generated-files.hmap -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-own-target-headers.hmap -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-all-target-headers.hmap -iquote /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-project-headers.hmap -F/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator -I/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/include -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/DerivedSources/i386 -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/gt/gtVBA6p+Go4eA1faph+FEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UglyTetris-Prefix-canygybusscsoteohpgayhpacace/UglyTetris-Prefix.pch -c /Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetrisViewController.m -o /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/UglyTetrisViewController.o0#
+
+CCompileC build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/main.o /Users/lokistudios/458/UglyTetris/UglyTetris/main.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s324696767.651192
+e324696767.811913
+r1
+xCompileC
+xbuild/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/main.o
+x/Users/lokistudios/458/UglyTetris/UglyTetris/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@59"Compile /Users/lokistudios/458/UglyTetris/UglyTetris/main.m324696767#324696767#0(0"0(0#0#51"/Users/lokistudios/458/UglyTetris/UglyTetris/main.m8603338624#2081"    cd /Users/lokistudios/458/UglyTetris    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-generated-files.hmap -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-own-target-headers.hmap -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-all-target-headers.hmap -iquote /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-project-headers.hmap -F/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator -I/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/include -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/DerivedSources/i386 -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/gt/gtVBA6p+Go4eA1faph+FEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UglyTetris-Prefix-canygybusscsoteohpgayhpacace/UglyTetris-Prefix.pch -c /Users/lokistudios/458/UglyTetris/UglyTetris/main.m -o /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/MainWindow.xib
+s324696768.621576
+e324696769.098120
+r1
+xCompileXIB
+x/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/MainWindow.xib
+lSLF07#2@45"CompileXIB UglyTetris/en.lproj/MainWindow.xib324696768#324696769#0(0"0(0#0#68"/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/MainWindow.xib8607390720#649"    cd /Users/lokistudios/458/UglyTetris    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/en.lproj/MainWindow.nib /Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib
+s324696768.936037
+e324696769.603922
+r1
+xCompileXIB
+x/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+o/* com.apple.ibtool.document.warnings */
+o/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:13: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Left)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.
+o/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:16: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Rotate CCW)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.
+o/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:14: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Right)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.
+o/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:22: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Stop)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.
+o/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:12: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Start)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.
+o/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:28: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Reset)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.
+o/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on UglyTetrisViewController.
+o/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:-1: warning: The 'timeLabel' outlet of 'File's Owner' is connected to 'Label (-458)' but 'timeLabel' is no longer defined on UglyTetrisViewController.
+o/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:-1: warning: The 'scoreLabel' outlet of 'File's Owner' is connected to 'Label (-459)' but 'scoreLabel' is no longer defined on UglyTetrisViewController.
+o/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:15: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Rotate CW)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.
+lSLF07#2@59"CompileXIB UglyTetris/en.lproj/UglyTetrisViewController.xib324696768#324696769#0(2883"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)/* com.apple.ibtool.document.warnings *//Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:13: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Left)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'./Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:16: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Rotate CCW)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'./Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:14: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Right)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'./Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:22: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Stop)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'./Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:12: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Start)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'./Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:28: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Reset)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'./Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on UglyTetrisViewController./Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:-1: warning: The 'timeLabel' outlet of 'File's Owner' is connected to 'Label (-458)' but 'timeLabel' is no longer defined on UglyTetrisViewController./Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:-1: warning: The 'scoreLabel' outlet of 'File's Owner' is connected to 'Label (-459)' but 'scoreLabel' is no longer defined on UglyTetrisViewController./Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib:15: warning: The 'Touch Up Inside' event of 'Rounded Rect Button (Rotate CW)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.10(22@197"The 'Touch Up Inside' event of 'Rounded Rect Button (Left)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.324696769#18446744073709551615#0#0(6@82"/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib324696607#13#0#13#0#0"0(22@203"The 'Touch Up Inside' event of 'Rounded Rect Button (Rotate CCW)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.324696769#18446744073709551615#0#0(6@82"/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib324696607#16#0#16#0#0"0(22@198"The 'Touch Up Inside' event of 'Rounded Rect Button (Right)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.324696769#18446744073709551615#0#0(6@82"/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib324696607#14#0#14#0#0"0(22@197"The 'Touch Up Inside' event of 'Rounded Rect Button (Stop)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.324696769#18446744073709551615#0#0(6@82"/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib324696607#22#0#22#0#0"0(22@198"The 'Touch Up Inside' event of 'Rounded Rect Button (Start)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.324696769#18446744073709551615#0#0(6@82"/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib324696607#12#0#12#0#0"0(22@198"The 'Touch Up Inside' event of 'Rounded Rect Button (Reset)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.324696769#18446744073709551615#0#0(6@82"/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib324696607#28#0#28#0#0"0(22@119"The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on UglyTetrisViewController.324696769#18446744073709551615#0#0(6@82"/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib324696607#18446744073709551615#0#18446744073709551615#0#0"0(22@137"The 'timeLabel' outlet of 'File's Owner' is connected to 'Label (-458)' but 'timeLabel' is no longer defined on UglyTetrisViewController.324696769#18446744073709551615#0#0(6@82"/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib324696607#18446744073709551615#0#18446744073709551615#0#0"0(22@139"The 'scoreLabel' outlet of 'File's Owner' is connected to 'Label (-459)' but 'scoreLabel' is no longer defined on UglyTetrisViewController.324696769#18446744073709551615#0#0(6@82"/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib324696607#18446744073709551615#0#18446744073709551615#0#0"0(22@202"The 'Touch Up Inside' event of 'Rounded Rect Button (Rotate CW)' is connected to the 'buttonPressed:' selector of 'File's Owner', but 'buttonPressed:' is no longer defined on 'UglyTetrisViewController'.324696769#18446744073709551615#0#0(6@82"/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib324696607#15#0#15#0#0"0(0#0#82"/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib8606983008#677"    cd /Users/lokistudios/458/UglyTetris    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/en.lproj/UglyTetrisViewController.nib /Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/UglyTetrisViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCopyStringsFile /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/en.lproj/InfoPlist.strings UglyTetris/en.lproj/InfoPlist.strings
+s324696768.620705
+e324696768.935926
+r1
+xCopyStringsFile
+x/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/en.lproj/InfoPlist.strings
+xUglyTetris/en.lproj/InfoPlist.strings
+lSLF07#2@42"Copy UglyTetris/en.lproj/InfoPlist.strings324696768#324696768#0(0"0(0#0#71"/Users/lokistudios/458/UglyTetris/UglyTetris/en.lproj/InfoPlist.strings8607616160#549"    cd /Users/lokistudios/458/UglyTetris    setenv ICONV /usr/bin/iconv    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding binary UglyTetris/en.lproj/InfoPlist.strings --outdir /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/en.lproj0#
+
+CGenerateDSYMFile /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app.dSYM /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/UglyTetris
+s324696768.503730
+e324696768.620604
+r1
+xGenerateDSYMFile
+x/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app.dSYM
+x/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/UglyTetris
+lSLF07#2@118"GenerateDSYMFile build/Debug-iphonesimulator/UglyTetris.app.dSYM build/Debug-iphonesimulator/UglyTetris.app/UglyTetris324696768#324696768#0(0"0(0#0#87"/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/UglyTetris8603346176#439"    cd /Users/lokistudios/458/UglyTetris    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/UglyTetris -o /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app.dSYM0#
+
+CLd /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/UglyTetris normal i386
+s324696768.058903
+e324696768.503627
+r1
+xLd
+x/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/UglyTetris
+xnormal
+xi386
+lSLF07#2@92"Link /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/UglyTetris324696768#324696768#0(0"0(0#0#0"8604596288#966"    cd /Users/lokistudios/458/UglyTetris    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator -F/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator -filelist /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/Objects-normal/i386/UglyTetris.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework UIKit -framework Foundation -framework CoreGraphics -prebind -o /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/UglyTetris0#
+
+CProcessInfoPlistFile /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/Info.plist UglyTetris/UglyTetris-Info.plist
+s324696766.413951
+e324696766.440114
+r1
+xProcessInfoPlistFile
+x/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/Info.plist
+xUglyTetris/UglyTetris-Info.plist
+lSLF07#2@40"Process UglyTetris/UglyTetris-Info.plist324696766#324696766#0(0"0(0#0#66"/Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetris-Info.plist30681223440564324#546"    cd /Users/lokistudios/458/UglyTetris    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility UglyTetris/UglyTetris-Info.plist -genpkginfo /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app/Info.plist0#
+
+CProcessPCH /var/folders/gt/gtVBA6p+Go4eA1faph+FEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UglyTetris-Prefix-canygybusscsoteohpgayhpacace/UglyTetris-Prefix.pch.gch UglyTetris/UglyTetris-Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
+s324696766.440268
+e324696767.651059
+r1
+xProcessPCH
+x/var/folders/gt/gtVBA6p+Go4eA1faph+FEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UglyTetris-Prefix-canygybusscsoteohpgayhpacace/UglyTetris-Prefix.pch.gch
+xUglyTetris/UglyTetris-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@43"Precompile UglyTetris/UglyTetris-Prefix.pch324696766#324696767#0(0"0(0#0#66"/Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetris-Prefix.pch8604613856#1975"    cd /Users/lokistudios/458/UglyTetris    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-generated-files.hmap -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-own-target-headers.hmap -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-all-target-headers.hmap -iquote /Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/UglyTetris-project-headers.hmap -F/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator -I/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/include -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/DerivedSources/i386 -I/Users/lokistudios/458/UglyTetris/build/UglyTetris.build/Debug-iphonesimulator/UglyTetris.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -c /Users/lokistudios/458/UglyTetris/UglyTetris/UglyTetris-Prefix.pch -o /var/folders/gt/gtVBA6p+Go4eA1faph+FEk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UglyTetris-Prefix-canygybusscsoteohpgayhpacace/UglyTetris-Prefix.pch.gch0#
+
+CTouch /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app
+s324696769.604069
+e324696769.650661
+r1
+xTouch
+x/Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app
+lSLF07#2@82"Touch /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app324696769#324696769#0(0"0(0#0#0"8607615168#333"    cd /Users/lokistudios/458/UglyTetris    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/lokistudios/458/UglyTetris/build/Debug-iphonesimulator/UglyTetris.app0#
+

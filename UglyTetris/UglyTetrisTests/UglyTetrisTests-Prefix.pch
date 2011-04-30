@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'UglyTetrisTests' target in the 'UglyTetrisTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

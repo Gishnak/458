@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A779ABC1354117400EC2F72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A779ABB1354117400EC2F72 /* UIKit.framework */; };
+		7A779ABE1354117400EC2F72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A779ABD1354117400EC2F72 /* Foundation.framework */; };
+		7A779AC01354117400EC2F72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A779ABF1354117400EC2F72 /* CoreGraphics.framework */; };
+		7A779AC61354117400EC2F72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A779AC41354117400EC2F72 /* InfoPlist.strings */; };
+		7A779AC91354117400EC2F72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A779AC81354117400EC2F72 /* main.m */; };
+		7A779ACC1354117400EC2F72 /* UglyTetrisAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A779ACB1354117400EC2F72 /* UglyTetrisAppDelegate.m */; };
+		7A779ACF1354117400EC2F72 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A779ACD1354117400EC2F72 /* MainWindow.xib */; };
+		7A779AD21354117400EC2F72 /* UglyTetrisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A779AD11354117400EC2F72 /* UglyTetrisViewController.m */; };
+		7A779AD51354117400EC2F72 /* UglyTetrisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A779AD31354117400EC2F72 /* UglyTetrisViewController.xib */; };
+		7A779ADC1354117400EC2F72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A779ABB1354117400EC2F72 /* UIKit.framework */; };
+		7A779ADD1354117400EC2F72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A779ABD1354117400EC2F72 /* Foundation.framework */; };
+		7A779ADE1354117400EC2F72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A779ABF1354117400EC2F72 /* CoreGraphics.framework */; };
+		7A779AE61354117400EC2F72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A779AE41354117400EC2F72 /* InfoPlist.strings */; };
+		7A779AE91354117500EC2F72 /* UglyTetrisTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 7A779AE81354117500EC2F72 /* UglyTetrisTests.h */; };
+		7A779AEB1354117500EC2F72 /* UglyTetrisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A779AEA1354117500EC2F72 /* UglyTetrisTests.m */; };
+		7A779AF61354119300EC2F72 /* TetrisEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A779AF51354119300EC2F72 /* TetrisEngine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A779ADF1354117400EC2F72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A779AAE1354117400EC2F72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A779AB61354117400EC2F72;
+			remoteInfo = UglyTetris;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A779AB71354117400EC2F72 /* UglyTetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UglyTetris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A779ABB1354117400EC2F72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7A779ABD1354117400EC2F72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7A779ABF1354117400EC2F72 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7A779AC31354117400EC2F72 /* UglyTetris-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UglyTetris-Info.plist"; sourceTree = "<group>"; };
+		7A779AC51354117400EC2F72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7A779AC71354117400EC2F72 /* UglyTetris-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UglyTetris-Prefix.pch"; sourceTree = "<group>"; };
+		7A779AC81354117400EC2F72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7A779ACA1354117400EC2F72 /* UglyTetrisAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UglyTetrisAppDelegate.h; sourceTree = "<group>"; };
+		7A779ACB1354117400EC2F72 /* UglyTetrisAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UglyTetrisAppDelegate.m; sourceTree = "<group>"; };
+		7A779ACE1354117400EC2F72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		7A779AD01354117400EC2F72 /* UglyTetrisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UglyTetrisViewController.h; sourceTree = "<group>"; };
+		7A779AD11354117400EC2F72 /* UglyTetrisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UglyTetrisViewController.m; sourceTree = "<group>"; };
+		7A779AD41354117400EC2F72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UglyTetrisViewController.xib; sourceTree = "<group>"; };
+		7A779ADB1354117400EC2F72 /* UglyTetrisTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UglyTetrisTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A779AE31354117400EC2F72 /* UglyTetrisTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UglyTetrisTests-Info.plist"; sourceTree = "<group>"; };
+		7A779AE51354117400EC2F72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7A779AE71354117400EC2F72 /* UglyTetrisTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UglyTetrisTests-Prefix.pch"; sourceTree = "<group>"; };
+		7A779AE81354117500EC2F72 /* UglyTetrisTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UglyTetrisTests.h; sourceTree = "<group>"; };
+		7A779AEA1354117500EC2F72 /* UglyTetrisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UglyTetrisTests.m; sourceTree = "<group>"; };
+		7A779AF41354119300EC2F72 /* TetrisEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TetrisEngine.h; sourceTree = "<group>"; };
+		7A779AF51354119300EC2F72 /* TetrisEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TetrisEngine.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A779AB41354117400EC2F72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A779ABC1354117400EC2F72 /* UIKit.framework in Frameworks */,
+				7A779ABE1354117400EC2F72 /* Foundation.framework in Frameworks */,
+				7A779AC01354117400EC2F72 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A779AD71354117400EC2F72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A779ADC1354117400EC2F72 /* UIKit.framework in Frameworks */,
+				7A779ADD1354117400EC2F72 /* Foundation.framework in Frameworks */,
+				7A779ADE1354117400EC2F72 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A779AAC1354117400EC2F72 = {
+			isa = PBXGroup;
+			children = (
+				7A779AC11354117400EC2F72 /* UglyTetris */,
+				7A779AE11354117400EC2F72 /* UglyTetrisTests */,
+				7A779ABA1354117400EC2F72 /* Frameworks */,
+				7A779AB81354117400EC2F72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A779AB81354117400EC2F72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A779AB71354117400EC2F72 /* UglyTetris.app */,
+				7A779ADB1354117400EC2F72 /* UglyTetrisTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A779ABA1354117400EC2F72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A779ABB1354117400EC2F72 /* UIKit.framework */,
+				7A779ABD1354117400EC2F72 /* Foundation.framework */,
+				7A779ABF1354117400EC2F72 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A779AC11354117400EC2F72 /* UglyTetris */ = {
+			isa = PBXGroup;
+			children = (
+				7A779AF41354119300EC2F72 /* TetrisEngine.h */,
+				7A779AF51354119300EC2F72 /* TetrisEngine.m */,
+				7A779ACA1354117400EC2F72 /* UglyTetrisAppDelegate.h */,
+				7A779ACB1354117400EC2F72 /* UglyTetrisAppDelegate.m */,
+				7A779ACD1354117400EC2F72 /* MainWindow.xib */,
+				7A779AD01354117400EC2F72 /* UglyTetrisViewController.h */,
+				7A779AD11354117400EC2F72 /* UglyTetrisViewController.m */,
+				7A779AD31354117400EC2F72 /* UglyTetrisViewController.xib */,
+				7A779AC21354117400EC2F72 /* Supporting Files */,
+			);
+			path = UglyTetris;
+			sourceTree = "<group>";
+		};
+		7A779AC21354117400EC2F72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A779AC31354117400EC2F72 /* UglyTetris-Info.plist */,
+				7A779AC41354117400EC2F72 /* InfoPlist.strings */,
+				7A779AC71354117400EC2F72 /* UglyTetris-Prefix.pch */,
+				7A779AC81354117400EC2F72 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A779AE11354117400EC2F72 /* UglyTetrisTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A779AE81354117500EC2F72 /* UglyTetrisTests.h */,
+				7A779AEA1354117500EC2F72 /* UglyTetrisTests.m */,
+				7A779AE21354117400EC2F72 /* Supporting Files */,
+			);
+			path = UglyTetrisTests;
+			sourceTree = "<group>";
+		};
+		7A779AE21354117400EC2F72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A779AE31354117400EC2F72 /* UglyTetrisTests-Info.plist */,
+				7A779AE41354117400EC2F72 /* InfoPlist.strings */,
+				7A779AE71354117400EC2F72 /* UglyTetrisTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A779AB61354117400EC2F72 /* UglyTetris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A779AEE1354117500EC2F72 /* Build configuration list for PBXNativeTarget "UglyTetris" */;
+			buildPhases = (
+				7A779AB31354117400EC2F72 /* Sources */,
+				7A779AB41354117400EC2F72 /* Frameworks */,
+				7A779AB51354117400EC2F72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UglyTetris;
+			productName = UglyTetris;
+			productReference = 7A779AB71354117400EC2F72 /* UglyTetris.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A779ADA1354117400EC2F72 /* UglyTetrisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A779AF11354117500EC2F72 /* Build configuration list for PBXNativeTarget "UglyTetrisTests" */;
+			buildPhases = (
+				7A779AD61354117400EC2F72 /* Sources */,
+				7A779AD71354117400EC2F72 /* Frameworks */,
+				7A779AD81354117400EC2F72 /* Resources */,
+				7A779AD91354117400EC2F72 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A779AE01354117400EC2F72 /* PBXTargetDependency */,
+			);
+			name = UglyTetrisTests;
+			productName = UglyTetrisTests;
+			productReference = 7A779ADB1354117400EC2F72 /* UglyTetrisTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A779AAE1354117400EC2F72 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 7A779AB11354117400EC2F72 /* Build configuration list for PBXProject "UglyTetris" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7A779AAC1354117400EC2F72;
+			productRefGroup = 7A779AB81354117400EC2F72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A779AB61354117400EC2F72 /* UglyTetris */,
+				7A779ADA1354117400EC2F72 /* UglyTetrisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A779AB51354117400EC2F72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A779AC61354117400EC2F72 /* InfoPlist.strings in Resources */,
+				7A779ACF1354117400EC2F72 /* MainWindow.xib in Resources */,
+				7A779AD51354117400EC2F72 /* UglyTetrisViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A779AD81354117400EC2F72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A779AE61354117400EC2F72 /* InfoPlist.strings in Resources */,
+				7A779AE91354117500EC2F72 /* UglyTetrisTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A779AD91354117400EC2F72 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A779AB31354117400EC2F72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A779AC91354117400EC2F72 /* main.m in Sources */,
+				7A779ACC1354117400EC2F72 /* UglyTetrisAppDelegate.m in Sources */,
+				7A779AD21354117400EC2F72 /* UglyTetrisViewController.m in Sources */,
+				7A779AF61354119300EC2F72 /* TetrisEngine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A779AD61354117400EC2F72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A779AEB1354117500EC2F72 /* UglyTetrisTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A779AE01354117400EC2F72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A779AB61354117400EC2F72 /* UglyTetris */;
+			targetProxy = 7A779ADF1354117400EC2F72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A779AC41354117400EC2F72 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A779AC51354117400EC2F72 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7A779ACD1354117400EC2F72 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A779ACE1354117400EC2F72 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		7A779AD31354117400EC2F72 /* UglyTetrisViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A779AD41354117400EC2F72 /* en */,
+			);
+			name = UglyTetrisViewController.xib;
+			sourceTree = "<group>";
+		};
+		7A779AE41354117400EC2F72 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A779AE51354117400EC2F72 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A779AEC1354117500EC2F72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7A779AED1354117500EC2F72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		7A779AEF1354117500EC2F72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UglyTetris/UglyTetris-Prefix.pch";
+				INFOPLIST_FILE = "UglyTetris/UglyTetris-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7A779AF01354117500EC2F72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UglyTetris/UglyTetris-Prefix.pch";
+				INFOPLIST_FILE = "UglyTetris/UglyTetris-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7A779AF21354117500EC2F72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UglyTetris.app/UglyTetris";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UglyTetrisTests/UglyTetrisTests-Prefix.pch";
+				INFOPLIST_FILE = "UglyTetrisTests/UglyTetrisTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7A779AF31354117500EC2F72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UglyTetris.app/UglyTetris";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UglyTetrisTests/UglyTetrisTests-Prefix.pch";
+				INFOPLIST_FILE = "UglyTetrisTests/UglyTetrisTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A779AB11354117400EC2F72 /* Build configuration list for PBXProject "UglyTetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A779AEC1354117500EC2F72 /* Debug */,
+				7A779AED1354117500EC2F72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A779AEE1354117500EC2F72 /* Build configuration list for PBXNativeTarget "UglyTetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A779AEF1354117500EC2F72 /* Debug */,
+				7A779AF01354117500EC2F72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A779AF11354117500EC2F72 /* Build configuration list for PBXNativeTarget "UglyTetrisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A779AF21354117500EC2F72 /* Debug */,
+				7A779AF31354117500EC2F72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A779AAE1354117400EC2F72 /* Project object */;
+}

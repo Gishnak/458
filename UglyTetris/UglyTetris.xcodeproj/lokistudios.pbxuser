@@ -1,0 +1,109 @@
+// !$*UTF8*$!
+{
+	7A779AAE1354117400EC2F72 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 7D82CFDC135A7AB200C9A8E5 /* UglyTetris */;
+		activeSDKPreference = iphonesimulator4.2;
+		activeTarget = 7A779AB61354117400EC2F72 /* UglyTetris */;
+		codeSenseManager = 7D82D008135A7AC200C9A8E5 /* Code sense */;
+		executables = (
+			7D82CFDC135A7AB200C9A8E5 /* UglyTetris */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					312,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					252,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 324697388;
+			PBXWorkspaceStateSaveDate = 324697388;
+		};
+		sourceControlManager = 7D82D007135A7AC200C9A8E5 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	7A779AB61354117400EC2F72 /* UglyTetris */ = {
+		activeExec = 0;
+		executables = (
+			7D82CFDC135A7AB200C9A8E5 /* UglyTetris */,
+		);
+	};
+	7A779ADA1354117400EC2F72 /* UglyTetrisTests */ = {
+		activeExec = 0;
+	};
+	7D82CFDC135A7AB200C9A8E5 /* UglyTetris */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = UglyTetris;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	7D82D007135A7AC200C9A8E5 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	7D82D008135A7AC200C9A8E5 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
