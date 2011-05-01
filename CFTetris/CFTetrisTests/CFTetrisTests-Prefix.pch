@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CFTetrisTests' target in the 'CFTetrisTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
