@@ -33,10 +33,6 @@
     return self;
 }
 
-- (id) init
-{
-    return [self initWithFrame: [self frame]];
-}
 
 - (void) setColor: (UIColor*)color forRow: (int) row column: (int) col
 {

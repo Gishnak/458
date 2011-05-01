@@ -22,16 +22,13 @@
     [_engine removeObserver:self forKeyPath:@"gridVersion"];
     [_engine release];
     _engine = [eng retain];
-//    self.engine = [[TetrisEngine alloc] initWithState: state];
     [self setupLabels];
-    //board = [TetrisEngine alloc];
 
     
 }
 
 - (void) setupLabels
 {
-    [board init];
     if (!self.engine || ![self isViewLoaded])
         return;
     [self.engine addObserver:self
@@ -80,10 +77,6 @@
             
         }
     }
-    [[self view] setNeedsDisplay];
-    [board setNeedsDisplay];
-    [[self view] setNeedsDisplay];
-    [board setNeedsDisplay];
 }
 
 
