@@ -25,7 +25,7 @@
     [self setupLabels];
     
 }
-
+//
 - (void) setupLabels
 {
     if (!self.engine || ![self isViewLoaded] || !board)
@@ -50,10 +50,28 @@
             forKeyPath:@"height"
                options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial)
                context:nil];
+    //Ask Bellardo: Where should I put this stuff?
     board.width = [self.engine width];
     board.height = [self.engine height];
+    board.target = self;
+    board.panAction = @selector(panAmount:);
+    board.touchAction = @selector(touchAmount:);
+    board.shakeAction = @selector(shake);
+    
     [self refreshView];
 }
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [board becomeFirstResponder];
+    [super viewWillAppear:animated];
+}
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [board resignFirstResponder];
+    [super viewWillDisappear:animated];
+}
+
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
@@ -89,7 +107,7 @@
             if (0 == piece)
                 [board setColor: [UIColor whiteColor] forRow:row column: column];
             else if ( 1 == piece) 
-                [board setColor: [UICol	or cyanColor] forRow:row column: column];
+                [board setColor: [UIColor cyanColor] forRow:row column: column];
             else if ( 2 == piece) 
                 [board setColor: [UIColor blueColor] forRow:row column: column];
             else if ( 3 == piece) 
@@ -109,13 +127,57 @@
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+//Ask Bellardo: Why isn't this called ever?
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self setupLabels];
 
 }
+- (void) panAmount: (NSNumber*)amount
+{
+    if ([amount intValue] > 0 ) 
+    {
+        [self.engine slideRight];
+    }
+    else 
+    {
+        [self.engine slideLeft];
+    }
+}
+- (void) touchAmount: (NSNumber*)amount
+{
+    if ([amount intValue] == 1)
+    {
+        if ([self.engine running]) 
+        {
+            [self.engine rotateCW];
+        }
+        else
+        {
+            [self.engine start];
+        }
+    }
+    else if ([amount intValue] == 2)
+    {
+        if ([self.engine running])
+        {
+            [self.engine stop];
+        }
+        else
+        {
+            [self.engine start];
+        }
+    }
+        
+    
+    
+}
 
+- (void) shake
+{
+    [self.engine reset];
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

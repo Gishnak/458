@@ -26,7 +26,7 @@
 		7A1889CE136D2ED5006A55C5 /* UglyTetrisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1889CB136D2ED5006A55C5 /* UglyTetrisViewController.m */; };
 		7A1889CF136D2ED5006A55C5 /* UglyTetrisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1889CC136D2ED5006A55C5 /* UglyTetrisViewController.xib */; };
 		7A1889D2136D2EE0006A55C5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A1889D1136D2EE0006A55C5 /* Settings.bundle */; };
-		7A1889D5136D31DF006A55C5 /* TetrisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1889D4136D31DF006A55C5 /* TetrisView.m */; };
+		7ACEDEE6136FCD3C00FBBCB2 /* TetrisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEDEE5136FCD3C00FBBCB2 /* TetrisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +67,7 @@
 		7A1889CC136D2ED5006A55C5 /* UglyTetrisViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UglyTetrisViewController.xib; sourceTree = "<group>"; };
 		7A1889D1136D2EE0006A55C5 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		7A1889D3136D31DF006A55C5 /* TetrisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TetrisView.h; sourceTree = "<group>"; };
-		7A1889D4136D31DF006A55C5 /* TetrisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TetrisView.m; sourceTree = "<group>"; };
+		7ACEDEE5136FCD3C00FBBCB2 /* TetrisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TetrisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +135,7 @@
 				7A188994136D2E98006A55C5 /* CFTetrisAppDelegate.h */,
 				7A188995136D2E98006A55C5 /* CFTetrisAppDelegate.m */,
 				7A1889D3136D31DF006A55C5 /* TetrisView.h */,
-				7A1889D4136D31DF006A55C5 /* TetrisView.m */,
+				7ACEDEE5136FCD3C00FBBCB2 /* TetrisView.m */,
 				7A188997136D2E98006A55C5 /* MainWindow.xib */,
 				7A18899A136D2E98006A55C5 /* FirstViewController.h */,
 				7A18899B136D2E98006A55C5 /* FirstViewController.m */,
@@ -288,7 +288,7 @@
 				7A18899C136D2E98006A55C5 /* FirstViewController.m in Sources */,
 				7A1889CD136D2ED5006A55C5 /* TetrisEngine.m in Sources */,
 				7A1889CE136D2ED5006A55C5 /* UglyTetrisViewController.m in Sources */,
-				7A1889D5136D31DF006A55C5 /* TetrisView.m in Sources */,
+				7ACEDEE6136FCD3C00FBBCB2 /* TetrisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

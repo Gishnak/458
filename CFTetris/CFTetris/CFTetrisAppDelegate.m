@@ -54,7 +54,13 @@
    // return YES;
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(eraseView) name:@"shake" object:nil];
     return YES;
+}
+
+-(void) eraseView
+{
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
