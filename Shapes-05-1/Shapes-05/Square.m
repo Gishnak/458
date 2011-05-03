@@ -32,7 +32,7 @@
     CGContextAddRect(context, box);
     CGContextClosePath(context);
     [[UIColor blackColor] setStroke];
-    [[UIColor yellowColor] setFill];
+    [[UIColor yellowColor] setFill];	
     
     CGContextDrawPath(context, kCGPathFillStroke);
 }
