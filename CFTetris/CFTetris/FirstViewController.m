@@ -25,7 +25,7 @@
     [self setupLabels];
     
 }
-//
+
 - (void) setupLabels
 {
     if (!self.engine || ![self isViewLoaded] || !board)

@@ -114,9 +114,6 @@
     // Call the target-action
     if (translate.x >= [self frame].size.width / self.width + [self frame].size.width / self.width * self.moveAmt) {
         self.moveAmt++;
-        //NSLog(@"translate.x: %f framewidth/width: %f", translate.x, [self frame].size.width/self.width);
-        //int amount = translate.x / ([self frame].size.width / self.width);
-        //NSLog(@"firstamount!: %d\n", amount);
         [self.target performSelector:self.panAction
                           withObject:[NSNumber numberWithInt: 1]];
     }
@@ -189,7 +186,9 @@
 }
 
 - (BOOL)canBecomeFirstResponder
-{ return YES; }
+{ 
+    return YES;
+}
 
 
 - (void)dealloc

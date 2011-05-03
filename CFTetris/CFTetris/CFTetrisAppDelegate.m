@@ -8,6 +8,7 @@
 
 #import "CFTetrisAppDelegate.h"
 #import "UglyTetrisViewController.h"
+#import "MemoryHound.h"
 
 @implementation CFTetrisAppDelegate
 
@@ -42,6 +43,7 @@
 {
     // Override point for customization after application launch.
     // Add the tab bar controller's current view as a subview of the window
+    [MemoryHound startHound];
     [self restoreState];
     if (!self.engine)
         self.engine = [[TetrisEngine alloc] initWithHeight:10];
@@ -49,19 +51,12 @@
     self.engine.antiGrav = [defaults boolForKey: @"antigravity"];
     [[self.tabBarController.viewControllers objectAtIndex:1] setEngine:self.engine]; 
     [[self.tabBarController.viewControllers objectAtIndex:0] setEngine:self.engine];
-    //self.window.rootViewController = self.viewController;
-   // [self.window makeKeyAndVisible];
-   // return YES;
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(eraseView) name:@"shake" object:nil];
     return YES;
 }
 
--(void) eraseView
-{
-
-}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -123,18 +118,6 @@
     [super dealloc];
 }
 
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
-{
-}
-*/
 
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
-{
-}
-*/
 
 @end
