@@ -23,13 +23,12 @@
     [_engine release];
     _engine = [eng retain];
     [self setupLabels];
-
     
 }
 
 - (void) setupLabels
 {
-    if (!self.engine || ![self isViewLoaded])
+    if (!self.engine || ![self isViewLoaded] || !board)
         return;
     [self.engine addObserver:self
                   forKeyPath:@"score"
@@ -43,6 +42,17 @@
                   forKeyPath:@"gridVersion"
                      options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial)
                      context:nil];
+    [board addObserver:self
+            forKeyPath:@"width"
+               options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial)
+               context:nil];
+    [board addObserver:self
+            forKeyPath:@"height"
+               options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial)
+               context:nil];
+    board.width = [self.engine width];
+    board.height = [self.engine height];
+    [self refreshView];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
@@ -59,6 +69,14 @@
         [self refreshView]; 
         
     }
+    if ([keyPath isEqual: @"width"]) {
+        [board setUpGrid];
+        
+    }
+    if ([keyPath isEqual: @"height"]) {
+        [board setUpGrid];
+        
+    }
 }
 
 - (void) refreshView
@@ -69,11 +87,21 @@
         for (int row = 0; row < [self.engine height]; row++) {
             int piece = [self.engine pieceAtRow:row column:column];
             if (0 == piece)
-                //((UILabel*)[gridLabels objectAtIndex: TetrisArrIdx(row, column)]).text = @".";
                 [board setColor: [UIColor whiteColor] forRow:row column: column];
-            else
+            else if ( 1 == piece) 
+                [board setColor: [UICol	or cyanColor] forRow:row column: column];
+            else if ( 2 == piece) 
+                [board setColor: [UIColor blueColor] forRow:row column: column];
+            else if ( 3 == piece) 
+                [board setColor: [UIColor orangeColor] forRow:row column: column];
+            else if ( 4 == piece) 
+                [board setColor: [UIColor yellowColor] forRow:row column: column];
+            else if ( 5 == piece) 
+                [board setColor: [UIColor greenColor] forRow:row column: column];
+            else if ( 6 == piece) 
+                [board setColor: [UIColor purpleColor] forRow:row column: column];
+            else if ( 7 == piece) 
                 [board setColor: [UIColor redColor] forRow:row column: column];
-                //((UILabel*)[gridLabels objectAtIndex: TetrisArrIdx(row, column)]).text = @"X";
             
         }
     }
@@ -85,6 +113,7 @@
 {
     [super viewDidLoad];
     [self setupLabels];
+
 }
 
 

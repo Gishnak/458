@@ -19,18 +19,19 @@
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
-    if (self) {
-        self.width = 10;
-        self.height = 10;
-        self.grid = [[NSMutableArray alloc] initWithCapacity: TetrisArrSize(self.height)];
-        for (int i = 0; i < TetrisArrSize(self.height); i++) 
-        {
-            [self.grid addObject: [UIColor whiteColor]];
-        }
 
-        
-    }
     return self;
+}
+
+
+- (void) setUpGrid
+{
+    [self.grid release];
+    self.grid = [[NSMutableArray alloc] initWithCapacity: TetrisArrSize(self.height)];
+    for (int i = 0; i < TetrisArrSize(self.height); i++) 
+    {
+        [self.grid addObject: [UIColor whiteColor]];
+    }
 }
 
 
@@ -38,22 +39,26 @@
 {
     [self.grid replaceObjectAtIndex: TetrisArrIdx(row, col) withObject: color];
     [self setNeedsDisplay];
-    NSLog(@"%lu", sizeof([self window]));
-
-//    NSLog(@"%d", test);
 }
 
 
 - (void)drawRect:(CGRect)rect
 {
-    
     for (int column = 0; column < self.width; column++) {
         for (int row = 0; row < self.height; row++) {
-            double x = rect.origin.x + (double) row/self.width;
-            NSLog(@"x: %f", x);
-            CGRect gridSpot = CGRectMake(rect.origin.x + (double)row/self.width * rect.size.width, rect.origin.y + (double)column/self.height * rect.size.height, rect.size.width/self.width, rect.size.height/self.height);
-            [(UIColor*)[self.grid objectAtIndex: TetrisArrIdx(row, column)] set]; 
-            UIRectFill(gridSpot);
+            
+            CGContextRef context = UIGraphicsGetCurrentContext();
+
+            CGRect box = CGRectMake(rect.origin.x + (double)column/self.width * rect.size.width, rect.size.height - (double)(	row+1)/self.height * rect.size.height, rect.size.width/self.width, (double)rect.size.height/self.height);
+
+            CGContextBeginPath(context);
+            CGContextAddRect(context, box);
+            CGContextClosePath(context);
+            [[UIColor blackColor] setStroke];
+            [(UIColor*)[self.grid objectAtIndex: TetrisArrIdx(row, column)] setFill];	
+            
+            CGContextDrawPath(context, kCGPathFillStroke); 
+
             
         }
     }

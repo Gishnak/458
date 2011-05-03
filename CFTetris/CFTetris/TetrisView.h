@@ -18,6 +18,6 @@
 @property (nonatomic, retain) NSMutableArray* grid;
 
 - (void) setColor: (UIColor*) color forRow: (int) row column: (int) col;
-- (void) drawRect:(CGRect)rect;
+- (void) setUpGrid;
 
 @end
