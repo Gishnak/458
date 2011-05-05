@@ -16,7 +16,8 @@
 
 @interface TetrisView ()
 @property (nonatomic) CGPoint lastPan;
-@property (nonatomic) int moveAmt;
+@property (nonatomic) int moveAmtx;
+@property (nonatomic) int moveAmty;
 
 - (void) setupGestures;
 - (void) handlePanGesture: (UIPanGestureRecognizer*)sender;
@@ -32,7 +33,8 @@
 @synthesize touchAction = touchAction_;
 @synthesize shakeAction = shakeAction_;
 @synthesize lastPan = lastPan_;
-@synthesize moveAmt = moveAmt_;
+@synthesize moveAmtx = moveAmtx_;
+@synthesize moveAmty = moveAmty_;
 
 
 - (id)initWithFrame:(CGRect)frame
@@ -102,7 +104,8 @@
     
     CGPoint translate = [sender translationInView:self];
     if (sender.state == UIGestureRecognizerStateBegan)
-        self.moveAmt = 0;
+        self.moveAmtx = 0;
+        self.moveAmty= 0;
         //self.lastPan = translate;
     
     if (sender.state != UIGestureRecognizerStateBegan &&
@@ -112,17 +115,26 @@
     
     
     // Call the target-action
-    if (translate.x >= [self frame].size.width / self.width + [self frame].size.width / self.width * self.moveAmt) {
-        self.moveAmt++;
+    if (translate.x >= [self frame].size.width / self.width + [self frame].size.width / self.width * self.moveAmtx) {
+        self.moveAmtx++;
         [self.target performSelector:self.panAction
                           withObject:[NSNumber numberWithInt: 1]];
     }
-    if (translate.x <= -1 * [self frame].size.width / self.width + [self frame].size.width / self.width * self.moveAmt) {
-        self.moveAmt--;
+    if (translate.x <= -1 * [self frame].size.width / self.width + [self frame].size.width / self.width * self.moveAmtx) {
+        self.moveAmtx--;
         [self.target performSelector:self.panAction
                           withObject:[NSNumber numberWithInt: -1]];
     }
-    
+    if (translate.y >= [self frame].size.height / self.height + [self frame].size.height / self.height * self.moveAmty) {
+        self.moveAmty++;
+        [self.target performSelector:self.panAction
+                          withObject:[NSNumber numberWithInt: 2]];
+    }
+    if (translate.y <= -1 * [self frame].size.height / self.height + [self frame].size.height / self.height * self.moveAmty) {
+        self.moveAmty--;
+        [self.target performSelector:self.panAction
+                          withObject:[NSNumber numberWithInt: -2]];
+    }
 }
 
 - (void)handleTap:(UITapGestureRecognizer *)sender

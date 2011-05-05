@@ -136,13 +136,21 @@
 }
 - (void) panAmount: (NSNumber*)amount
 {
-    if ([amount intValue] > 0 ) 
+    if ([amount intValue] == 1) 
     {
         [self.engine slideRight];
     }
-    else 
+    if ([amount intValue] == -1)
     {
         [self.engine slideLeft];
+    }
+    if ([amount intValue] == -2)
+    {
+        [self.engine pieceUp];
+    }
+    if ([amount intValue] == 2)
+    {
+        [self.engine pieceDown];
     }
 }
 - (void) touchAmount: (NSNumber*)amount
