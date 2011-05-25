@@ -10,6 +10,7 @@
 #import "Shapes_05ViewController.h"
 #import "Ellipse.h"
 #import "Square.h"
+#import "Ship.h"
 #import "World.h"
 #import <QuartzCore/QuartzCore.h>
 
@@ -54,52 +55,22 @@
     MovableShape *subView;
     WorldObject *wobj;
 
-    // Configure each WorldObject and corresponding UIView.
-    CGRect frame1 = { 0, 0, 30, 50 };
-    wobj = [[WorldObject alloc] initWithType:1 andLocation:frame1];
-    [self.world addObject:wobj];
-    subView = [[Ellipse alloc] initWithFrame:frame1];
-    subView.opaque = NO;
-    subView.backgroundColor = [UIColor clearColor];
-    subView.tag = wobj.objId;
-    subView.target = self;
-    subView.panAction = @selector(panShape:amount:);
-    [self.view addSubview:subView];
-    [subView release];
+
+    UITapGestureRecognizer * tgn =
+    [[UITapGestureRecognizer alloc]
+     initWithTarget:self
+     action:@selector(handleTap:)];
     
-    // Use KVO to monitor changes to the object's location
-    [wobj addObserver:self forKeyPath:@"location"
-              options:NSKeyValueObservingOptionInitial
-              context:subView];
-    // I want to keep an ownership interest in the WorldObject since I'm monitoring
-    //  it with KVO.  The ownership will be released in - (void) dealloc.
-    // [wobj release];
-
-    CGRect frame2 = { 123, 222, 75, 24 };
-    wobj = [[WorldObject alloc] initWithType:2 andLocation:frame2];
+    
+    [self.view addGestureRecognizer:tgn];
+    
+    [tgn release];
+    
+    CGRect frame4 = { 100, self.view.frame.size.height - 100, 43, 100 };
+    wobj = [[WorldObject alloc] initWithType:1 andLocation:frame4];
+    wobj.velocity =  CGPointMake(0, 0);
     [self.world addObject:wobj];
-    subView = [[Square alloc] initWithFrame:frame2];
-    subView.opaque = NO;
-    subView.backgroundColor = [UIColor clearColor];
-    subView.tag = wobj.objId;
-    subView.target = self;
-    subView.panAction = @selector(panShape:amount:);
-    [self.view addSubview:subView];
-    [subView release];
-
-    // Use KVO to monitor changes to the object's location
-    [wobj addObserver:self forKeyPath:@"location"
-              options:NSKeyValueObservingOptionInitial
-              context:subView];
-    // I want to keep an ownership interest in the WorldObject since I'm monitoring
-    //  it with KVO.  The ownership will be released in - (void) dealloc.
-    // [wobj release];
-
-    // Use KVO to monitor changes to the object's location
-    CGRect frame3 = { 200, 79, 43, 221 };
-    wobj = [[WorldObject alloc] initWithType:1 andLocation:frame3];
-    [self.world addObject:wobj];
-    subView = [[Ellipse alloc] initWithFrame:frame3];
+    subView = [[Ship alloc] initWithFrame:frame4];
     subView.opaque = NO;
     subView.backgroundColor = [UIColor clearColor];
     subView.tag = wobj.objId;
@@ -145,8 +116,8 @@
         wobj.acceleration = CGPointMake(0, 0);
     }
     if (data.state == UIGestureRecognizerStateEnded) {
-        wobj.acceleration = CGPointMake(0, 480);
-        wobj.velocity = data.velocity;
+    //wobj.acceleration = CGPointMake(0, 480);
+       // wobj.velocity = data.velocity;
     }
     
     CGRect newFrame = wobj.location;
@@ -154,6 +125,36 @@
     newFrame.origin.y += data.distance.y;
     
     wobj.location = newFrame;
+}
+
+- (void)handleTap:(UITapGestureRecognizer *)sender
+{    
+   // NSLog(@"ht: %d\n", [sender numberOfTouches]);
+    WorldObject *ship = [self.world objectWithID: 0];
+    NSLog(@"loc: %f\n", ship.location.origin.x);
+    if (sender.state == UIGestureRecognizerStateEnded)
+    {
+        //WorldObject *ship = [self.world objectWithID: 0];
+        
+        WorldObject *wobj;
+        MovableShape *subView;
+        CGRect bullet = {ship.location.origin.x + 17, ship.location.origin.y, 10, 10 };
+        wobj = [[WorldObject alloc] initWithType:1 andLocation:bullet];
+        [self.world addObject:wobj];
+        subView = [[Ellipse alloc] initWithFrame:bullet];
+        subView.opaque = NO;
+        subView.backgroundColor = [UIColor clearColor];
+        subView.tag = wobj.objId;
+        subView.target = self;
+        subView.panAction = @selector(panShape:amount:);
+        [self.view addSubview:subView];
+        [subView release];
+        [wobj addObserver:self forKeyPath:@"location"
+                  options:NSKeyValueObservingOptionInitial
+                  context:subView];
+     //  [self.target performSelector:self.touchAction
+                        //  withObject:[NSNumber numberWithInt: [sender numberOfTouches]]];
+    } 
 }
 
 - (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context

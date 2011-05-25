@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D4F3DB5137452DD0030F9C7 /* Ship.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4F3DB4137452DD0030F9C7 /* Ship.m */; };
+		7D4F3DB8137456140030F9C7 /* drashmupz.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7D4F3DB7137456140030F9C7 /* drashmupz.gif */; };
 		BA174BD91360FFD2006ED278 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA174BD81360FFD2006ED278 /* UIKit.framework */; };
 		BA174BDB1360FFD2006ED278 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA174BDA1360FFD2006ED278 /* Foundation.framework */; };
 		BA174BDD1360FFD2006ED278 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA174BDC1360FFD2006ED278 /* CoreGraphics.framework */; };
@@ -26,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D4F3DB3137452DD0030F9C7 /* Ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ship.h; sourceTree = "<group>"; };
+		7D4F3DB4137452DD0030F9C7 /* Ship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ship.m; sourceTree = "<group>"; };
+		7D4F3DB7137456140030F9C7 /* drashmupz.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = drashmupz.gif; sourceTree = "<group>"; };
 		BA174BD41360FFD2006ED278 /* Shapes-05-5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shapes-05-5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA174BD81360FFD2006ED278 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BA174BDA1360FFD2006ED278 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,6 +115,9 @@
 				BA174BEE1360FFD2006ED278 /* Shapes_05ViewController.m */,
 				BA174BF01360FFD2006ED278 /* Shapes_05ViewController.xib */,
 				BA174BDF1360FFD2006ED278 /* Supporting Files */,
+				7D4F3DB3137452DD0030F9C7 /* Ship.h */,
+				7D4F3DB4137452DD0030F9C7 /* Ship.m */,
+				7D4F3DB7137456140030F9C7 /* drashmupz.gif */,
 				BA174BF81361002F006ED278 /* Ellipse.h */,
 				BA174BF91361002F006ED278 /* Ellipse.m */,
 				BA174BFB1361038A006ED278 /* Square.h */,
@@ -188,6 +196,7 @@
 				BA174BE31360FFD2006ED278 /* InfoPlist.strings in Resources */,
 				BA174BEC1360FFD2006ED278 /* MainWindow.xib in Resources */,
 				BA174BF21360FFD2006ED278 /* Shapes_05ViewController.xib in Resources */,
+				7D4F3DB8137456140030F9C7 /* drashmupz.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +216,7 @@
 				BA174C401367942D006ED278 /* World.m in Sources */,
 				BA91398D136A36D2001729DA /* MovableShape.m in Sources */,
 				BAA6BE07136B129C009EF26A /* MemoryHound.m in Sources */,
+				7D4F3DB5137452DD0030F9C7 /* Ship.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +262,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -266,7 +276,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};
@@ -281,7 +291,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Shapes-05/Shapes-05-Prefix.pch";
 				INFOPLIST_FILE = "Shapes-05/Shapes-05-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -296,7 +306,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Shapes-05/Shapes-05-Prefix.pch";
 				INFOPLIST_FILE = "Shapes-05/Shapes-05-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;

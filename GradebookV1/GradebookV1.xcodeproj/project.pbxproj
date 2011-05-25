@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D8FDB52138BC79F004805E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8FDB51138BC79F004805E7 /* UIKit.framework */; };
+		7D8FDB54138BC79F004805E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8FDB53138BC79F004805E7 /* Foundation.framework */; };
+		7D8FDB56138BC79F004805E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8FDB55138BC79F004805E7 /* CoreGraphics.framework */; };
+		7D8FDB5C138BC79F004805E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D8FDB5A138BC79F004805E7 /* InfoPlist.strings */; };
+		7D8FDB5F138BC79F004805E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FDB5E138BC79F004805E7 /* main.m */; };
+		7D8FDB62138BC79F004805E7 /* GradebookV1AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FDB61138BC79F004805E7 /* GradebookV1AppDelegate.m */; };
+		7D8FDB65138BC79F004805E7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8FDB63138BC79F004805E7 /* MainWindow.xib */; };
+		7D8FDB68138BC79F004805E7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FDB67138BC79F004805E7 /* RootViewController.m */; };
+		7D8FDB6B138BC79F004805E7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8FDB69138BC79F004805E7 /* RootViewController.xib */; };
+		7D8FDB72138BC7A0004805E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8FDB51138BC79F004805E7 /* UIKit.framework */; };
+		7D8FDB73138BC7A0004805E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8FDB53138BC79F004805E7 /* Foundation.framework */; };
+		7D8FDB74138BC7A0004805E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8FDB55138BC79F004805E7 /* CoreGraphics.framework */; };
+		7D8FDB7C138BC7A0004805E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D8FDB7A138BC7A0004805E7 /* InfoPlist.strings */; };
+		7D8FDB7F138BC7A0004805E7 /* GradebookV1Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 7D8FDB7E138BC7A0004805E7 /* GradebookV1Tests.h */; };
+		7D8FDB81138BC7A0004805E7 /* GradebookV1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FDB80138BC7A0004805E7 /* GradebookV1Tests.m */; };
+		7D8FDB8C138BCCE2004805E7 /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FDB8B138BCCE2004805E7 /* Section.m */; };
+		7D8FDB8F138BD648004805E7 /* EnrollmentPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FDB8E138BD648004805E7 /* EnrollmentPicker.m */; };
+		7D9D627D138BDADD000C2959 /* Enrollment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9D627C138BDADD000C2959 /* Enrollment.m */; };
+		7D9D6281138BE02A000C2959 /* Assignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9D6280138BE02A000C2959 /* Assignment.m */; };
+		7D9D6284138BE55F000C2959 /* AssignmentPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9D6283138BE55F000C2959 /* AssignmentPicker.m */; };
+		7D9D6287138CE6CE000C2959 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9D6286138CE6CE000C2959 /* Score.m */; };
+		7D9D628A138CE738000C2959 /* ScoreViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9D6289138CE737000C2959 /* ScoreViewer.m */; };
+		7D9D628D138CEB53000C2959 /* NSString+Base64Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9D628C138CEB53000C2959 /* NSString+Base64Encoding.m */; };
+		7D9D6290138CF107000C2959 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9D628F138CF106000C2959 /* JSONKit.m */; };
+		7D9D62A3138D003B000C2959 /* InfoGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9D62A2138D003A000C2959 /* InfoGrabber.m */; };
+		7DA19743138D1DA20068050D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7DA19742138D1DA20068050D /* Settings.bundle */; };
+		7DA19747138D29E70068050D /* MemoryHound.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA19746138D29E70068050D /* MemoryHound.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D8FDB75138BC7A0004805E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D8FDB44138BC79E004805E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D8FDB4C138BC79F004805E7;
+			remoteInfo = GradebookV1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D8FDB4D138BC79F004805E7 /* GradebookV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradebookV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D8FDB51138BC79F004805E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7D8FDB53138BC79F004805E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7D8FDB55138BC79F004805E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7D8FDB59138BC79F004805E7 /* GradebookV1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GradebookV1-Info.plist"; sourceTree = "<group>"; };
+		7D8FDB5B138BC79F004805E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7D8FDB5D138BC79F004805E7 /* GradebookV1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GradebookV1-Prefix.pch"; sourceTree = "<group>"; };
+		7D8FDB5E138BC79F004805E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D8FDB60138BC79F004805E7 /* GradebookV1AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradebookV1AppDelegate.h; sourceTree = "<group>"; };
+		7D8FDB61138BC79F004805E7 /* GradebookV1AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradebookV1AppDelegate.m; sourceTree = "<group>"; };
+		7D8FDB64138BC79F004805E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		7D8FDB66138BC79F004805E7 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		7D8FDB67138BC79F004805E7 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		7D8FDB6A138BC79F004805E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		7D8FDB71138BC7A0004805E7 /* GradebookV1Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradebookV1Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D8FDB79138BC7A0004805E7 /* GradebookV1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GradebookV1Tests-Info.plist"; sourceTree = "<group>"; };
+		7D8FDB7B138BC7A0004805E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7D8FDB7D138BC7A0004805E7 /* GradebookV1Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GradebookV1Tests-Prefix.pch"; sourceTree = "<group>"; };
+		7D8FDB7E138BC7A0004805E7 /* GradebookV1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradebookV1Tests.h; sourceTree = "<group>"; };
+		7D8FDB80138BC7A0004805E7 /* GradebookV1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradebookV1Tests.m; sourceTree = "<group>"; };
+		7D8FDB8A138BCCE2004805E7 /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
+		7D8FDB8B138BCCE2004805E7 /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+		7D8FDB8D138BD648004805E7 /* EnrollmentPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnrollmentPicker.h; sourceTree = "<group>"; };
+		7D8FDB8E138BD648004805E7 /* EnrollmentPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnrollmentPicker.m; sourceTree = "<group>"; };
+		7D9D627B138BDADD000C2959 /* Enrollment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enrollment.h; sourceTree = "<group>"; };
+		7D9D627C138BDADD000C2959 /* Enrollment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enrollment.m; sourceTree = "<group>"; };
+		7D9D627F138BE02A000C2959 /* Assignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assignment.h; sourceTree = "<group>"; };
+		7D9D6280138BE02A000C2959 /* Assignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Assignment.m; sourceTree = "<group>"; };
+		7D9D6282138BE55F000C2959 /* AssignmentPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssignmentPicker.h; sourceTree = "<group>"; };
+		7D9D6283138BE55F000C2959 /* AssignmentPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssignmentPicker.m; sourceTree = "<group>"; };
+		7D9D6285138CE6CE000C2959 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		7D9D6286138CE6CE000C2959 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		7D9D6288138CE737000C2959 /* ScoreViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewer.h; sourceTree = "<group>"; };
+		7D9D6289138CE737000C2959 /* ScoreViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewer.m; sourceTree = "<group>"; };
+		7D9D628B138CEB52000C2959 /* NSString+Base64Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64Encoding.h"; sourceTree = "<group>"; };
+		7D9D628C138CEB53000C2959 /* NSString+Base64Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64Encoding.m"; sourceTree = "<group>"; };
+		7D9D628E138CF106000C2959 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		7D9D628F138CF106000C2959 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		7D9D62A1138D003A000C2959 /* InfoGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoGrabber.h; sourceTree = "<group>"; };
+		7D9D62A2138D003A000C2959 /* InfoGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoGrabber.m; sourceTree = "<group>"; };
+		7DA19742138D1DA20068050D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		7DA19745138D29E70068050D /* MemoryHound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryHound.h; sourceTree = "<group>"; };
+		7DA19746138D29E70068050D /* MemoryHound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryHound.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D8FDB4A138BC79F004805E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8FDB52138BC79F004805E7 /* UIKit.framework in Frameworks */,
+				7D8FDB54138BC79F004805E7 /* Foundation.framework in Frameworks */,
+				7D8FDB56138BC79F004805E7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D8FDB6D138BC7A0004805E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8FDB72138BC7A0004805E7 /* UIKit.framework in Frameworks */,
+				7D8FDB73138BC7A0004805E7 /* Foundation.framework in Frameworks */,
+				7D8FDB74138BC7A0004805E7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D8FDB42138BC79E004805E7 = {
+			isa = PBXGroup;
+			children = (
+				7D8FDB57138BC79F004805E7 /* GradebookV1 */,
+				7D8FDB77138BC7A0004805E7 /* GradebookV1Tests */,
+				7D8FDB50138BC79F004805E7 /* Frameworks */,
+				7D8FDB4E138BC79F004805E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D8FDB4E138BC79F004805E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D8FDB4D138BC79F004805E7 /* GradebookV1.app */,
+				7D8FDB71138BC7A0004805E7 /* GradebookV1Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D8FDB50138BC79F004805E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D8FDB51138BC79F004805E7 /* UIKit.framework */,
+				7D8FDB53138BC79F004805E7 /* Foundation.framework */,
+				7D8FDB55138BC79F004805E7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D8FDB57138BC79F004805E7 /* GradebookV1 */ = {
+			isa = PBXGroup;
+			children = (
+				7DA19745138D29E70068050D /* MemoryHound.h */,
+				7DA19746138D29E70068050D /* MemoryHound.m */,
+				7D9D628E138CF106000C2959 /* JSONKit.h */,
+				7D9D628F138CF106000C2959 /* JSONKit.m */,
+				7D9D628B138CEB52000C2959 /* NSString+Base64Encoding.h */,
+				7D9D628C138CEB53000C2959 /* NSString+Base64Encoding.m */,
+				7D8FDB60138BC79F004805E7 /* GradebookV1AppDelegate.h */,
+				7D8FDB61138BC79F004805E7 /* GradebookV1AppDelegate.m */,
+				7D8FDB63138BC79F004805E7 /* MainWindow.xib */,
+				7D8FDB66138BC79F004805E7 /* RootViewController.h */,
+				7D8FDB67138BC79F004805E7 /* RootViewController.m */,
+				7D8FDB8D138BD648004805E7 /* EnrollmentPicker.h */,
+				7D8FDB8E138BD648004805E7 /* EnrollmentPicker.m */,
+				7D9D6282138BE55F000C2959 /* AssignmentPicker.h */,
+				7D9D6283138BE55F000C2959 /* AssignmentPicker.m */,
+				7D9D6288138CE737000C2959 /* ScoreViewer.h */,
+				7D9D6289138CE737000C2959 /* ScoreViewer.m */,
+				7D9D6285138CE6CE000C2959 /* Score.h */,
+				7D9D6286138CE6CE000C2959 /* Score.m */,
+				7D9D627B138BDADD000C2959 /* Enrollment.h */,
+				7D9D627C138BDADD000C2959 /* Enrollment.m */,
+				7D8FDB8A138BCCE2004805E7 /* Section.h */,
+				7D8FDB8B138BCCE2004805E7 /* Section.m */,
+				7D9D62A1138D003A000C2959 /* InfoGrabber.h */,
+				7D9D62A2138D003A000C2959 /* InfoGrabber.m */,
+				7D9D627F138BE02A000C2959 /* Assignment.h */,
+				7D9D6280138BE02A000C2959 /* Assignment.m */,
+				7D8FDB69138BC79F004805E7 /* RootViewController.xib */,
+				7D8FDB58138BC79F004805E7 /* Supporting Files */,
+				7DA19742138D1DA20068050D /* Settings.bundle */,
+			);
+			path = GradebookV1;
+			sourceTree = "<group>";
+		};
+		7D8FDB58138BC79F004805E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D8FDB59138BC79F004805E7 /* GradebookV1-Info.plist */,
+				7D8FDB5A138BC79F004805E7 /* InfoPlist.strings */,
+				7D8FDB5D138BC79F004805E7 /* GradebookV1-Prefix.pch */,
+				7D8FDB5E138BC79F004805E7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D8FDB77138BC7A0004805E7 /* GradebookV1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7D8FDB7E138BC7A0004805E7 /* GradebookV1Tests.h */,
+				7D8FDB80138BC7A0004805E7 /* GradebookV1Tests.m */,
+				7D8FDB78138BC7A0004805E7 /* Supporting Files */,
+			);
+			path = GradebookV1Tests;
+			sourceTree = "<group>";
+		};
+		7D8FDB78138BC7A0004805E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D8FDB79138BC7A0004805E7 /* GradebookV1Tests-Info.plist */,
+				7D8FDB7A138BC7A0004805E7 /* InfoPlist.strings */,
+				7D8FDB7D138BC7A0004805E7 /* GradebookV1Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D8FDB4C138BC79F004805E7 /* GradebookV1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D8FDB84138BC7A0004805E7 /* Build configuration list for PBXNativeTarget "GradebookV1" */;
+			buildPhases = (
+				7D8FDB49138BC79F004805E7 /* Sources */,
+				7D8FDB4A138BC79F004805E7 /* Frameworks */,
+				7D8FDB4B138BC79F004805E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GradebookV1;
+			productName = GradebookV1;
+			productReference = 7D8FDB4D138BC79F004805E7 /* GradebookV1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D8FDB70138BC7A0004805E7 /* GradebookV1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D8FDB87138BC7A0004805E7 /* Build configuration list for PBXNativeTarget "GradebookV1Tests" */;
+			buildPhases = (
+				7D8FDB6C138BC7A0004805E7 /* Sources */,
+				7D8FDB6D138BC7A0004805E7 /* Frameworks */,
+				7D8FDB6E138BC7A0004805E7 /* Resources */,
+				7D8FDB6F138BC7A0004805E7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D8FDB76138BC7A0004805E7 /* PBXTargetDependency */,
+			);
+			name = GradebookV1Tests;
+			productName = GradebookV1Tests;
+			productReference = 7D8FDB71138BC7A0004805E7 /* GradebookV1Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D8FDB44138BC79E004805E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Loki Studios";
+			};
+			buildConfigurationList = 7D8FDB47138BC79E004805E7 /* Build configuration list for PBXProject "GradebookV1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7D8FDB42138BC79E004805E7;
+			productRefGroup = 7D8FDB4E138BC79F004805E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D8FDB4C138BC79F004805E7 /* GradebookV1 */,
+				7D8FDB70138BC7A0004805E7 /* GradebookV1Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D8FDB4B138BC79F004805E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8FDB5C138BC79F004805E7 /* InfoPlist.strings in Resources */,
+				7D8FDB65138BC79F004805E7 /* MainWindow.xib in Resources */,
+				7D8FDB6B138BC79F004805E7 /* RootViewController.xib in Resources */,
+				7DA19743138D1DA20068050D /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D8FDB6E138BC7A0004805E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8FDB7C138BC7A0004805E7 /* InfoPlist.strings in Resources */,
+				7D8FDB7F138BC7A0004805E7 /* GradebookV1Tests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D8FDB6F138BC7A0004805E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D8FDB49138BC79F004805E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8FDB5F138BC79F004805E7 /* main.m in Sources */,
+				7D8FDB62138BC79F004805E7 /* GradebookV1AppDelegate.m in Sources */,
+				7D8FDB68138BC79F004805E7 /* RootViewController.m in Sources */,
+				7D8FDB8C138BCCE2004805E7 /* Section.m in Sources */,
+				7D8FDB8F138BD648004805E7 /* EnrollmentPicker.m in Sources */,
+				7D9D627D138BDADD000C2959 /* Enrollment.m in Sources */,
+				7D9D6281138BE02A000C2959 /* Assignment.m in Sources */,
+				7D9D6284138BE55F000C2959 /* AssignmentPicker.m in Sources */,
+				7D9D6287138CE6CE000C2959 /* Score.m in Sources */,
+				7D9D628A138CE738000C2959 /* ScoreViewer.m in Sources */,
+				7D9D628D138CEB53000C2959 /* NSString+Base64Encoding.m in Sources */,
+				7D9D6290138CF107000C2959 /* JSONKit.m in Sources */,
+				7D9D62A3138D003B000C2959 /* InfoGrabber.m in Sources */,
+				7DA19747138D29E70068050D /* MemoryHound.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D8FDB6C138BC7A0004805E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8FDB81138BC7A0004805E7 /* GradebookV1Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D8FDB76138BC7A0004805E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D8FDB4C138BC79F004805E7 /* GradebookV1 */;
+			targetProxy = 7D8FDB75138BC7A0004805E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D8FDB5A138BC79F004805E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D8FDB5B138BC79F004805E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7D8FDB63138BC79F004805E7 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D8FDB64138BC79F004805E7 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		7D8FDB69138BC79F004805E7 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D8FDB6A138BC79F004805E7 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		7D8FDB7A138BC7A0004805E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D8FDB7B138BC7A0004805E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D8FDB82138BC7A0004805E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7D8FDB83138BC7A0004805E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		7D8FDB85138BC7A0004805E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GradebookV1/GradebookV1-Prefix.pch";
+				INFOPLIST_FILE = "GradebookV1/GradebookV1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7D8FDB86138BC7A0004805E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GradebookV1/GradebookV1-Prefix.pch";
+				INFOPLIST_FILE = "GradebookV1/GradebookV1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7D8FDB88138BC7A0004805E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GradebookV1.app/GradebookV1";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GradebookV1Tests/GradebookV1Tests-Prefix.pch";
+				INFOPLIST_FILE = "GradebookV1Tests/GradebookV1Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7D8FDB89138BC7A0004805E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GradebookV1.app/GradebookV1";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GradebookV1Tests/GradebookV1Tests-Prefix.pch";
+				INFOPLIST_FILE = "GradebookV1Tests/GradebookV1Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D8FDB47138BC79E004805E7 /* Build configuration list for PBXProject "GradebookV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D8FDB82138BC7A0004805E7 /* Debug */,
+				7D8FDB83138BC7A0004805E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D8FDB84138BC7A0004805E7 /* Build configuration list for PBXNativeTarget "GradebookV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D8FDB85138BC7A0004805E7 /* Debug */,
+				7D8FDB86138BC7A0004805E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D8FDB87138BC7A0004805E7 /* Build configuration list for PBXNativeTarget "GradebookV1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D8FDB88138BC7A0004805E7 /* Debug */,
+				7D8FDB89138BC7A0004805E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D8FDB44138BC79E004805E7 /* Project object */;
+}

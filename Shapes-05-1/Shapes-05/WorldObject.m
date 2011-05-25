@@ -30,8 +30,8 @@
     self.objId = nextId++;
     self.type = ty;
     self.location = rect;
-    self.velocity = CGPointMake(-100, 0);
-    self.acceleration = CGPointMake(0, 480);
+    self.velocity = CGPointMake(0, -500);
+    self.acceleration = CGPointMake(0, 0);
     
     return self;
 }
