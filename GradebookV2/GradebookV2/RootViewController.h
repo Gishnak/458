@@ -17,6 +17,5 @@
 
 		
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
-@property (nonatomic, retain) DetailContainer *detailCont;
 
 @end

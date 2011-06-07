@@ -13,7 +13,6 @@
 @implementation RootViewController
 		
 @synthesize detailViewController;
-@synthesize detailCont;
 
 - (void)viewDidLoad
 {
@@ -117,9 +116,9 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
-    detailCont = [[DetailContainer alloc]init];
-    [self.navigationController pushViewController:detailCont animated:YES];
-    [detailCont release];
+   // detailCont = [[DetailContainer alloc]init];
+  //  [self.navigationController pushViewController:detailCont animated:YES];
+   // [detailCont release];
     
 }
 

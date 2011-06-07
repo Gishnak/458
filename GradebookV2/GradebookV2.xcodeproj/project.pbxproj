@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A197591139EC93D0008197F /* SectionPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A197590139EC93D0008197F /* SectionPicker.m */; };
+		7A197597139EC98D0008197F /* Assignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A197594139EC98C0008197F /* Assignment.m */; };
+		7A197598139EC98D0008197F /* AssignmentPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A197596139EC98C0008197F /* AssignmentPicker.m */; };
+		7A19759D139EC9980008197F /* Enrollment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A19759A139EC9970008197F /* Enrollment.m */; };
+		7A19759E139EC9980008197F /* EnrollmentPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A19759C139EC9980008197F /* EnrollmentPicker.m */; };
+		7A1975A1139EC9A30008197F /* InfoGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1975A0139EC9A20008197F /* InfoGrabber.m */; };
+		7A1975A4139EC9A90008197F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1975A3139EC9A90008197F /* JSONKit.m */; };
+		7A1975AB139EC9B30008197F /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1975A6139EC9B20008197F /* Score.m */; };
+		7A1975AC139EC9B30008197F /* ScoreViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1975A8139EC9B20008197F /* ScoreViewer.m */; };
+		7A1975AD139EC9B30008197F /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1975AA139EC9B30008197F /* Section.m */; };
+		7A1975B0139ECA230008197F /* NSString+Base64Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1975AF139ECA230008197F /* NSString+Base64Encoding.m */; };
+		7A1975B2139ED86C0008197F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A1975B1139ED86C0008197F /* Settings.bundle */; };
 		7D382234139DDC9D0018F9D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D382233139DDC9D0018F9D4 /* UIKit.framework */; };
 		7D382236139DDC9D0018F9D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D382235139DDC9D0018F9D4 /* Foundation.framework */; };
 		7D382238139DDC9D0018F9D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D382237139DDC9D0018F9D4 /* CoreGraphics.framework */; };
@@ -39,6 +51,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A19758F139EC93D0008197F /* SectionPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionPicker.h; sourceTree = "<group>"; };
+		7A197590139EC93D0008197F /* SectionPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionPicker.m; sourceTree = "<group>"; };
+		7A197593139EC98C0008197F /* Assignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assignment.h; sourceTree = "<group>"; };
+		7A197594139EC98C0008197F /* Assignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Assignment.m; sourceTree = "<group>"; };
+		7A197595139EC98C0008197F /* AssignmentPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssignmentPicker.h; sourceTree = "<group>"; };
+		7A197596139EC98C0008197F /* AssignmentPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssignmentPicker.m; sourceTree = "<group>"; };
+		7A197599139EC9970008197F /* Enrollment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enrollment.h; sourceTree = "<group>"; };
+		7A19759A139EC9970008197F /* Enrollment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enrollment.m; sourceTree = "<group>"; };
+		7A19759B139EC9980008197F /* EnrollmentPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnrollmentPicker.h; sourceTree = "<group>"; };
+		7A19759C139EC9980008197F /* EnrollmentPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnrollmentPicker.m; sourceTree = "<group>"; };
+		7A19759F139EC9A20008197F /* InfoGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoGrabber.h; sourceTree = "<group>"; };
+		7A1975A0139EC9A20008197F /* InfoGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoGrabber.m; sourceTree = "<group>"; };
+		7A1975A2139EC9A90008197F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		7A1975A3139EC9A90008197F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		7A1975A5139EC9B20008197F /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		7A1975A6139EC9B20008197F /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		7A1975A7139EC9B20008197F /* ScoreViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewer.h; sourceTree = "<group>"; };
+		7A1975A8139EC9B20008197F /* ScoreViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewer.m; sourceTree = "<group>"; };
+		7A1975A9139EC9B20008197F /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
+		7A1975AA139EC9B30008197F /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+		7A1975AE139ECA230008197F /* NSString+Base64Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64Encoding.h"; sourceTree = "<group>"; };
+		7A1975AF139ECA230008197F /* NSString+Base64Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64Encoding.m"; sourceTree = "<group>"; };
+		7A1975B1139ED86C0008197F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		7D38222F139DDC9D0018F9D4 /* GradebookV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradebookV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D382233139DDC9D0018F9D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7D382235139DDC9D0018F9D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -124,6 +159,27 @@
 		7D382239139DDC9D0018F9D4 /* GradebookV2 */ = {
 			isa = PBXGroup;
 			children = (
+				7A1975B1139ED86C0008197F /* Settings.bundle */,
+				7A1975AE139ECA230008197F /* NSString+Base64Encoding.h */,
+				7A1975AF139ECA230008197F /* NSString+Base64Encoding.m */,
+				7A1975A5139EC9B20008197F /* Score.h */,
+				7A1975A6139EC9B20008197F /* Score.m */,
+				7A1975A7139EC9B20008197F /* ScoreViewer.h */,
+				7A1975A8139EC9B20008197F /* ScoreViewer.m */,
+				7A1975A9139EC9B20008197F /* Section.h */,
+				7A1975AA139EC9B30008197F /* Section.m */,
+				7A1975A2139EC9A90008197F /* JSONKit.h */,
+				7A1975A3139EC9A90008197F /* JSONKit.m */,
+				7A19759F139EC9A20008197F /* InfoGrabber.h */,
+				7A1975A0139EC9A20008197F /* InfoGrabber.m */,
+				7A197599139EC9970008197F /* Enrollment.h */,
+				7A19759A139EC9970008197F /* Enrollment.m */,
+				7A19759B139EC9980008197F /* EnrollmentPicker.h */,
+				7A19759C139EC9980008197F /* EnrollmentPicker.m */,
+				7A197593139EC98C0008197F /* Assignment.h */,
+				7A197594139EC98C0008197F /* Assignment.m */,
+				7A197595139EC98C0008197F /* AssignmentPicker.h */,
+				7A197596139EC98C0008197F /* AssignmentPicker.m */,
 				7D382272139DDE9A0018F9D4 /* DetailContainer.h */,
 				7D382273139DDE9A0018F9D4 /* DetailContainer.m */,
 				7D382274139DDE9A0018F9D4 /* DetailContainer.xib */,
@@ -137,6 +193,8 @@
 				7D38224B139DDC9D0018F9D4 /* DetailView.xib */,
 				7D38224E139DDC9D0018F9D4 /* RootViewController.h */,
 				7D38224F139DDC9D0018F9D4 /* RootViewController.m */,
+				7A19758F139EC93D0008197F /* SectionPicker.h */,
+				7A197590139EC93D0008197F /* SectionPicker.m */,
 				7D38223A139DDC9D0018F9D4 /* Supporting Files */,
 			);
 			path = GradebookV2;
@@ -247,6 +305,7 @@
 				7D382247139DDC9D0018F9D4 /* MainWindow.xib in Resources */,
 				7D38224D139DDC9D0018F9D4 /* DetailView.xib in Resources */,
 				7D382276139DDE9A0018F9D4 /* DetailContainer.xib in Resources */,
+				7A1975B2139ED86C0008197F /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +347,17 @@
 				7D382250139DDC9D0018F9D4 /* RootViewController.m in Sources */,
 				7D382271139DDE6B0018F9D4 /* MemoryHound.m in Sources */,
 				7D382275139DDE9A0018F9D4 /* DetailContainer.m in Sources */,
+				7A197591139EC93D0008197F /* SectionPicker.m in Sources */,
+				7A197597139EC98D0008197F /* Assignment.m in Sources */,
+				7A197598139EC98D0008197F /* AssignmentPicker.m in Sources */,
+				7A19759D139EC9980008197F /* Enrollment.m in Sources */,
+				7A19759E139EC9980008197F /* EnrollmentPicker.m in Sources */,
+				7A1975A1139EC9A30008197F /* InfoGrabber.m in Sources */,
+				7A1975A4139EC9A90008197F /* JSONKit.m in Sources */,
+				7A1975AB139EC9B30008197F /* Score.m in Sources */,
+				7A1975AC139EC9B30008197F /* ScoreViewer.m in Sources */,
+				7A1975AD139EC9B30008197F /* Section.m in Sources */,
+				7A1975B0139ECA230008197F /* NSString+Base64Encoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +459,7 @@
 				GCC_PREFIX_HEADER = "GradebookV2/GradebookV2-Prefix.pch";
 				INFOPLIST_FILE = "GradebookV2/GradebookV2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -403,7 +473,7 @@
 				GCC_PREFIX_HEADER = "GradebookV2/GradebookV2-Prefix.pch";
 				INFOPLIST_FILE = "GradebookV2/GradebookV2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -474,6 +544,7 @@
 				7D38226B139DDC9D0018F9D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D38226C139DDC9D0018F9D4 /* Build configuration list for PBXNativeTarget "GradebookV2Tests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +553,7 @@
 				7D38226E139DDC9D0018F9D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

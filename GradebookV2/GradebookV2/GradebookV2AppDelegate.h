@@ -13,7 +13,11 @@
 @class DetailViewController;
 
 @interface GradebookV2AppDelegate : NSObject <UIApplicationDelegate> {
-
+    NSMutableArray *sections;
+    
+    NSString* myUserName;
+    NSString* myPassword;
+    NSString* myBaseUrl;
 }
 
 @property (nonatomic, retain) UIWindow *window;
@@ -23,5 +27,7 @@
 @property (nonatomic, retain) RootViewController *rootViewController;
 
 @property (nonatomic, retain) DetailViewController *detailViewController;
+
+@property (nonatomic, assign) NSMutableArray *sections;
 
 @end

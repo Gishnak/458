@@ -10,6 +10,15 @@
 
 #import "RootViewController.h"
 #import "DetailViewController.h"
+#import "SectionPicker.h"
+#import "Section.h"
+#import "Enrollment.h"
+#import "Assignment.h"
+#import "Score.h"
+#import "NSString+Base64Encoding.h"
+#import "JSONKit.h"
+#import "InfoGrabber.h"
+#import "MemoryHound.h"
 
 @implementation GradebookV2AppDelegate
 
@@ -22,24 +31,117 @@
 
 @synthesize detailViewController=_detailViewController;
 
+@synthesize sections = _sections;
+
+- (NSString*) authenticationHeader: (NSString*)username
+                          password:(NSString*)password
+{
+    NSString *loginString = [NSString
+                             stringWithFormat:@"%@:%@", username, password];
+    return [NSString stringWithFormat:@"Basic %@",
+            [loginString base64Encode]];
+}
+
+- (void)populateSections
+{
+    
+    NSString* aHeader = [self authenticationHeader:myUserName password: myPassword];
+    InfoGrabber *grabber = [[InfoGrabber alloc] initWithAuthenticationHeader:aHeader];
+    NSString* baseURL = myBaseUrl;
+    NSString* sectionQuery = @"?record=sections";
+    NSDictionary *sectionResult = [grabber getDictFromURL:[NSString localizedStringWithFormat:@"%@%@",baseURL,sectionQuery]];    
+    
+    if (sectionResult) {
+        if (self.sections == nil) {
+            self.sections = [[NSMutableArray alloc] init];
+        }
+        NSArray* mySections = [sectionResult objectForKey:@"sections"];
+        
+        for (NSDictionary* secDic in mySections) {
+            
+            NSString *course = [secDic objectForKey:@"course"];
+            NSString *term = [secDic objectForKey: @"term"];
+            Section *curSec = [[Section alloc] initWithNameAndTerm:course term:term];
+            curSec.enrollments = [[NSMutableArray alloc] init];
+            
+            NSString* enrollmentQuery = [NSString localizedStringWithFormat:      @"?record=enrollments&term=%@&course=%@", term, course];
+            NSDictionary *enrollmentResult = [grabber getDictFromURL:[NSString localizedStringWithFormat:@"%@%@",baseURL,enrollmentQuery]];
+            NSArray* myEnrollments = [enrollmentResult objectForKey:@"enrollments"];
+            for (NSDictionary* enrollDic in myEnrollments) {
+                NSString *userName = [enrollDic objectForKey:@"username"];
+                Enrollment *curEnroll = [[Enrollment alloc] initWithName:userName];
+                curEnroll.assignments = [[NSMutableArray alloc] init];
+                
+                NSString *userScoresQuery = [NSString localizedStringWithFormat:@"?record=userscores&term=%@&course=%@&user=%@",term,course,userName];
+                NSDictionary *userScoresResult = [grabber getDictFromURL: [NSString localizedStringWithFormat:@"%@%@", baseURL,userScoresQuery]];
+                NSLog(@"userscoresresult count %d", [userScoresResult count]);
+                NSArray *myUserScores = [userScoresResult objectForKey:@"userscores"];
+                
+                for (NSDictionary* userScoreDic in myUserScores) {
+                    NSString *assnName = [userScoreDic objectForKey:@"name"];
+                    Assignment *curAssign = [[Assignment alloc]initWithName:assnName];
+                    curAssign.scores = [[NSMutableArray alloc]init];
+                    NSArray *myScore = [userScoreDic objectForKey:@"scores"];
+                    for (NSDictionary *scoreDict in myScore) {
+                        Score *curScore = [[Score alloc] initWithName:[scoreDict objectForKey:@"display_score"]];
+                        [curAssign.scores addObject:curScore];
+                        [curScore release];
+                    }
+                    
+                    [curEnroll.assignments addObject:curAssign];
+                    [curAssign.scores release];
+                    [curAssign release];
+                }
+                [curSec.enrollments addObject:curEnroll];
+                [curEnroll.assignments release];
+                [curEnroll release];
+                
+            }
+            [self.sections addObject: curSec];
+            [curSec.enrollments release];
+            [curSec release];
+        }
+    }
+    [grabber release];
+    
+    
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     // Add the split view controller's view to the window and display.
-    self.splitViewController = [[UISplitViewController alloc] init];
-    self.rootViewController = [[[RootViewController alloc] init] autorelease];
-    self.detailViewController = [[DetailViewController alloc] init];
-    UINavigationController *rootNav = [[[UINavigationController alloc] initWithRootViewController:self.rootViewController]autorelease];
-    UINavigationController *detailNav = [[[UINavigationController alloc] initWithRootViewController: self.detailViewController] autorelease];
+    [MemoryHound startLowMemoryHound];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    myUserName = [defaults stringForKey:@"username"];
+    //myUserName = @"blaub";
+    myPassword = [defaults stringForKey:@"password"];
+   // myPassword = @"f7Tq39u)";
+    myBaseUrl = [defaults stringForKey:@"baseURL"];
+   // myBaseUrl = @"https://users.csc.calpoly.edu/~bellardo/cgi-bin/grades.json";
+    
+    
+    [self populateSections];
     
     
 
-    //self.splitViewController.delegate = self.detailViewController;
+    
+    SectionPicker *sp = [[SectionPicker alloc] init];
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:sp];
     DetailContainer *dc = [[DetailContainer alloc]init];
-    self.splitViewController.viewControllers = [NSArray arrayWithObjects:rootNav, dc, nil];
+    
 
-    self.splitViewController.delegate = dc;
-    [self.window addSubview:self.splitViewController.view];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        self.splitViewController = [[UISplitViewController alloc] init];
+            self.splitViewController.delegate = dc;
+        self.splitViewController.viewControllers = [NSArray arrayWithObjects:nc, dc, nil];
+        [self.window addSubview:self.splitViewController.view];
+    }
+    else
+    {
+        [self.window addSubview:nc.view];
+    }
+    
     [self.window makeKeyAndVisible];
     
     
@@ -90,7 +192,7 @@
 - (void)dealloc
 {
     [_window release];
-    [_splitViewController release];
+   // [_splitViewController release];
     [_rootViewController release];
     [_detailViewController release];
     [super dealloc];
