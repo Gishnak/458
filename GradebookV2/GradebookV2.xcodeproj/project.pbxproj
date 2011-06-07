@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D382234139DDC9D0018F9D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D382233139DDC9D0018F9D4 /* UIKit.framework */; };
+		7D382236139DDC9D0018F9D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D382235139DDC9D0018F9D4 /* Foundation.framework */; };
+		7D382238139DDC9D0018F9D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D382237139DDC9D0018F9D4 /* CoreGraphics.framework */; };
+		7D38223E139DDC9D0018F9D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D38223C139DDC9D0018F9D4 /* InfoPlist.strings */; };
+		7D382241139DDC9D0018F9D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D382240139DDC9D0018F9D4 /* main.m */; };
+		7D382244139DDC9D0018F9D4 /* GradebookV2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D382243139DDC9D0018F9D4 /* GradebookV2AppDelegate.m */; };
+		7D382247139DDC9D0018F9D4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D382245139DDC9D0018F9D4 /* MainWindow.xib */; };
+		7D38224A139DDC9D0018F9D4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D382249139DDC9D0018F9D4 /* DetailViewController.m */; };
+		7D38224D139DDC9D0018F9D4 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D38224B139DDC9D0018F9D4 /* DetailView.xib */; };
+		7D382250139DDC9D0018F9D4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D38224F139DDC9D0018F9D4 /* RootViewController.m */; };
+		7D382257139DDC9D0018F9D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D382233139DDC9D0018F9D4 /* UIKit.framework */; };
+		7D382258139DDC9D0018F9D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D382235139DDC9D0018F9D4 /* Foundation.framework */; };
+		7D382259139DDC9D0018F9D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D382237139DDC9D0018F9D4 /* CoreGraphics.framework */; };
+		7D382261139DDC9D0018F9D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D38225F139DDC9D0018F9D4 /* InfoPlist.strings */; };
+		7D382264139DDC9D0018F9D4 /* GradebookV2Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 7D382263139DDC9D0018F9D4 /* GradebookV2Tests.h */; };
+		7D382266139DDC9D0018F9D4 /* GradebookV2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D382265139DDC9D0018F9D4 /* GradebookV2Tests.m */; };
+		7D382271139DDE6B0018F9D4 /* MemoryHound.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D382270139DDE6B0018F9D4 /* MemoryHound.m */; };
+		7D382275139DDE9A0018F9D4 /* DetailContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D382273139DDE9A0018F9D4 /* DetailContainer.m */; };
+		7D382276139DDE9A0018F9D4 /* DetailContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D382274139DDE9A0018F9D4 /* DetailContainer.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D38225A139DDC9D0018F9D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D382226139DDC9D0018F9D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D38222E139DDC9D0018F9D4;
+			remoteInfo = GradebookV2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D38222F139DDC9D0018F9D4 /* GradebookV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradebookV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D382233139DDC9D0018F9D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7D382235139DDC9D0018F9D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7D382237139DDC9D0018F9D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7D38223B139DDC9D0018F9D4 /* GradebookV2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GradebookV2-Info.plist"; sourceTree = "<group>"; };
+		7D38223D139DDC9D0018F9D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7D38223F139DDC9D0018F9D4 /* GradebookV2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GradebookV2-Prefix.pch"; sourceTree = "<group>"; };
+		7D382240139DDC9D0018F9D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D382242139DDC9D0018F9D4 /* GradebookV2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradebookV2AppDelegate.h; sourceTree = "<group>"; };
+		7D382243139DDC9D0018F9D4 /* GradebookV2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradebookV2AppDelegate.m; sourceTree = "<group>"; };
+		7D382246139DDC9D0018F9D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		7D382248139DDC9D0018F9D4 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		7D382249139DDC9D0018F9D4 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		7D38224C139DDC9D0018F9D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailView.xib; sourceTree = "<group>"; };
+		7D38224E139DDC9D0018F9D4 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		7D38224F139DDC9D0018F9D4 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		7D382256139DDC9D0018F9D4 /* GradebookV2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradebookV2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D38225E139DDC9D0018F9D4 /* GradebookV2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GradebookV2Tests-Info.plist"; sourceTree = "<group>"; };
+		7D382260139DDC9D0018F9D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7D382262139DDC9D0018F9D4 /* GradebookV2Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GradebookV2Tests-Prefix.pch"; sourceTree = "<group>"; };
+		7D382263139DDC9D0018F9D4 /* GradebookV2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradebookV2Tests.h; sourceTree = "<group>"; };
+		7D382265139DDC9D0018F9D4 /* GradebookV2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradebookV2Tests.m; sourceTree = "<group>"; };
+		7D38226F139DDE6B0018F9D4 /* MemoryHound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryHound.h; sourceTree = "<group>"; };
+		7D382270139DDE6B0018F9D4 /* MemoryHound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryHound.m; sourceTree = "<group>"; };
+		7D382272139DDE9A0018F9D4 /* DetailContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailContainer.h; sourceTree = "<group>"; };
+		7D382273139DDE9A0018F9D4 /* DetailContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailContainer.m; sourceTree = "<group>"; };
+		7D382274139DDE9A0018F9D4 /* DetailContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailContainer.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D38222C139DDC9D0018F9D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D382234139DDC9D0018F9D4 /* UIKit.framework in Frameworks */,
+				7D382236139DDC9D0018F9D4 /* Foundation.framework in Frameworks */,
+				7D382238139DDC9D0018F9D4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D382252139DDC9D0018F9D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D382257139DDC9D0018F9D4 /* UIKit.framework in Frameworks */,
+				7D382258139DDC9D0018F9D4 /* Foundation.framework in Frameworks */,
+				7D382259139DDC9D0018F9D4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D382224139DDC9D0018F9D4 = {
+			isa = PBXGroup;
+			children = (
+				7D382239139DDC9D0018F9D4 /* GradebookV2 */,
+				7D38225C139DDC9D0018F9D4 /* GradebookV2Tests */,
+				7D382232139DDC9D0018F9D4 /* Frameworks */,
+				7D382230139DDC9D0018F9D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D382230139DDC9D0018F9D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D38222F139DDC9D0018F9D4 /* GradebookV2.app */,
+				7D382256139DDC9D0018F9D4 /* GradebookV2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D382232139DDC9D0018F9D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D382233139DDC9D0018F9D4 /* UIKit.framework */,
+				7D382235139DDC9D0018F9D4 /* Foundation.framework */,
+				7D382237139DDC9D0018F9D4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D382239139DDC9D0018F9D4 /* GradebookV2 */ = {
+			isa = PBXGroup;
+			children = (
+				7D382272139DDE9A0018F9D4 /* DetailContainer.h */,
+				7D382273139DDE9A0018F9D4 /* DetailContainer.m */,
+				7D382274139DDE9A0018F9D4 /* DetailContainer.xib */,
+				7D38226F139DDE6B0018F9D4 /* MemoryHound.h */,
+				7D382270139DDE6B0018F9D4 /* MemoryHound.m */,
+				7D382242139DDC9D0018F9D4 /* GradebookV2AppDelegate.h */,
+				7D382243139DDC9D0018F9D4 /* GradebookV2AppDelegate.m */,
+				7D382245139DDC9D0018F9D4 /* MainWindow.xib */,
+				7D382248139DDC9D0018F9D4 /* DetailViewController.h */,
+				7D382249139DDC9D0018F9D4 /* DetailViewController.m */,
+				7D38224B139DDC9D0018F9D4 /* DetailView.xib */,
+				7D38224E139DDC9D0018F9D4 /* RootViewController.h */,
+				7D38224F139DDC9D0018F9D4 /* RootViewController.m */,
+				7D38223A139DDC9D0018F9D4 /* Supporting Files */,
+			);
+			path = GradebookV2;
+			sourceTree = "<group>";
+		};
+		7D38223A139DDC9D0018F9D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D38223B139DDC9D0018F9D4 /* GradebookV2-Info.plist */,
+				7D38223C139DDC9D0018F9D4 /* InfoPlist.strings */,
+				7D38223F139DDC9D0018F9D4 /* GradebookV2-Prefix.pch */,
+				7D382240139DDC9D0018F9D4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D38225C139DDC9D0018F9D4 /* GradebookV2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7D382263139DDC9D0018F9D4 /* GradebookV2Tests.h */,
+				7D382265139DDC9D0018F9D4 /* GradebookV2Tests.m */,
+				7D38225D139DDC9D0018F9D4 /* Supporting Files */,
+			);
+			path = GradebookV2Tests;
+			sourceTree = "<group>";
+		};
+		7D38225D139DDC9D0018F9D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D38225E139DDC9D0018F9D4 /* GradebookV2Tests-Info.plist */,
+				7D38225F139DDC9D0018F9D4 /* InfoPlist.strings */,
+				7D382262139DDC9D0018F9D4 /* GradebookV2Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D38222E139DDC9D0018F9D4 /* GradebookV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D382269139DDC9D0018F9D4 /* Build configuration list for PBXNativeTarget "GradebookV2" */;
+			buildPhases = (
+				7D38222B139DDC9D0018F9D4 /* Sources */,
+				7D38222C139DDC9D0018F9D4 /* Frameworks */,
+				7D38222D139DDC9D0018F9D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GradebookV2;
+			productName = GradebookV2;
+			productReference = 7D38222F139DDC9D0018F9D4 /* GradebookV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D382255139DDC9D0018F9D4 /* GradebookV2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D38226C139DDC9D0018F9D4 /* Build configuration list for PBXNativeTarget "GradebookV2Tests" */;
+			buildPhases = (
+				7D382251139DDC9D0018F9D4 /* Sources */,
+				7D382252139DDC9D0018F9D4 /* Frameworks */,
+				7D382253139DDC9D0018F9D4 /* Resources */,
+				7D382254139DDC9D0018F9D4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D38225B139DDC9D0018F9D4 /* PBXTargetDependency */,
+			);
+			name = GradebookV2Tests;
+			productName = GradebookV2Tests;
+			productReference = 7D382256139DDC9D0018F9D4 /* GradebookV2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D382226139DDC9D0018F9D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Loki Studios";
+			};
+			buildConfigurationList = 7D382229139DDC9D0018F9D4 /* Build configuration list for PBXProject "GradebookV2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7D382224139DDC9D0018F9D4;
+			productRefGroup = 7D382230139DDC9D0018F9D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D38222E139DDC9D0018F9D4 /* GradebookV2 */,
+				7D382255139DDC9D0018F9D4 /* GradebookV2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D38222D139DDC9D0018F9D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D38223E139DDC9D0018F9D4 /* InfoPlist.strings in Resources */,
+				7D382247139DDC9D0018F9D4 /* MainWindow.xib in Resources */,
+				7D38224D139DDC9D0018F9D4 /* DetailView.xib in Resources */,
+				7D382276139DDE9A0018F9D4 /* DetailContainer.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D382253139DDC9D0018F9D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D382261139DDC9D0018F9D4 /* InfoPlist.strings in Resources */,
+				7D382264139DDC9D0018F9D4 /* GradebookV2Tests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D382254139DDC9D0018F9D4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D38222B139DDC9D0018F9D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D382241139DDC9D0018F9D4 /* main.m in Sources */,
+				7D382244139DDC9D0018F9D4 /* GradebookV2AppDelegate.m in Sources */,
+				7D38224A139DDC9D0018F9D4 /* DetailViewController.m in Sources */,
+				7D382250139DDC9D0018F9D4 /* RootViewController.m in Sources */,
+				7D382271139DDE6B0018F9D4 /* MemoryHound.m in Sources */,
+				7D382275139DDE9A0018F9D4 /* DetailContainer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D382251139DDC9D0018F9D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D382266139DDC9D0018F9D4 /* GradebookV2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D38225B139DDC9D0018F9D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D38222E139DDC9D0018F9D4 /* GradebookV2 */;
+			targetProxy = 7D38225A139DDC9D0018F9D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D38223C139DDC9D0018F9D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D38223D139DDC9D0018F9D4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7D382245139DDC9D0018F9D4 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D382246139DDC9D0018F9D4 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		7D38224B139DDC9D0018F9D4 /* DetailView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D38224C139DDC9D0018F9D4 /* en */,
+			);
+			name = DetailView.xib;
+			sourceTree = "<group>";
+		};
+		7D38225F139DDC9D0018F9D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D382260139DDC9D0018F9D4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D382267139DDC9D0018F9D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		7D382268139DDC9D0018F9D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		7D38226A139DDC9D0018F9D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GradebookV2/GradebookV2-Prefix.pch";
+				INFOPLIST_FILE = "GradebookV2/GradebookV2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7D38226B139DDC9D0018F9D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GradebookV2/GradebookV2-Prefix.pch";
+				INFOPLIST_FILE = "GradebookV2/GradebookV2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7D38226D139DDC9D0018F9D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GradebookV2.app/GradebookV2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GradebookV2Tests/GradebookV2Tests-Prefix.pch";
+				INFOPLIST_FILE = "GradebookV2Tests/GradebookV2Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7D38226E139DDC9D0018F9D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GradebookV2.app/GradebookV2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GradebookV2Tests/GradebookV2Tests-Prefix.pch";
+				INFOPLIST_FILE = "GradebookV2Tests/GradebookV2Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D382229139DDC9D0018F9D4 /* Build configuration list for PBXProject "GradebookV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D382267139DDC9D0018F9D4 /* Debug */,
+				7D382268139DDC9D0018F9D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D382269139DDC9D0018F9D4 /* Build configuration list for PBXNativeTarget "GradebookV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D38226A139DDC9D0018F9D4 /* Debug */,
+				7D38226B139DDC9D0018F9D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7D38226C139DDC9D0018F9D4 /* Build configuration list for PBXNativeTarget "GradebookV2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D38226D139DDC9D0018F9D4 /* Debug */,
+				7D38226E139DDC9D0018F9D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D382226139DDC9D0018F9D4 /* Project object */;
+}
