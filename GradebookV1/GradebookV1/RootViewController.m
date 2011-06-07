@@ -14,6 +14,10 @@
 
 @implementation RootViewController
 
+-(void)refreshData 
+{
+    [self.tableView reloadData];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -23,6 +27,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -57,6 +62,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     GradebookV1AppDelegate *appDelegate = (GradebookV1AppDelegate*)[[UIApplication sharedApplication] delegate];
+    NSLog(@"rvc count: %d", appDelegate.sections.count);
     return appDelegate.sections.count;
 }
 
@@ -138,7 +144,7 @@
     ePicker.title = @"Enrollments";
     ePicker.section = section;
     [self.navigationController pushViewController:ePicker animated:YES];
-    //[ePicker release];
+    [ePicker release];
     //
 }
 

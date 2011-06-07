@@ -166,7 +166,7 @@
     sViewer.title = @"Score";
     sViewer.assignment = assn;
     [self.navigationController pushViewController:sViewer animated:YES];
-  //  [sViewer release];
+    [sViewer release];
 }
 
 @end

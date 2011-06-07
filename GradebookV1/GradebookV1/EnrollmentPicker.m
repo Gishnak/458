@@ -171,7 +171,7 @@
     aPicker.title = @"Assignments";
     aPicker.enrollment = enrollment;
     [self.navigationController pushViewController:aPicker animated:YES];
-   // [aPicker release];
+    [aPicker release];
 }
 
 @end

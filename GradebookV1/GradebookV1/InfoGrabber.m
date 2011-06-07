@@ -34,12 +34,12 @@
     NSURLResponse *resp = nil;
     NSError *error = nil;
     NSData *data = [NSURLConnection sendSynchronousRequest:req returningResponse:&resp error:&error];
+    NSLog(@"url:%@", [resp URL]);
     
-    NSDictionary *result = [[NSDictionary alloc] init];
     if (error == nil) {
     
     JSONDecoder * decoder = [JSONDecoder decoder];
-     result = [decoder objectWithData: data];
+     NSDictionary *result = [decoder objectWithData: data];
         return result;
     }
     else {

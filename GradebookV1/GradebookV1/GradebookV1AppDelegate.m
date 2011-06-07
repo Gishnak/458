@@ -37,12 +37,12 @@
 
 - (void)populateSections
 {
+    
     NSString* aHeader = [self authenticationHeader:myUserName password: myPassword];
     InfoGrabber *grabber = [[InfoGrabber alloc] initWithAuthenticationHeader:aHeader];
     NSString* baseURL = myBaseUrl;
     NSString* sectionQuery = @"?record=sections";
-    NSDictionary *sectionResult = [grabber getDictFromURL:[NSString localizedStringWithFormat:@"%@%@",baseURL,sectionQuery]];
-    
+    NSDictionary *sectionResult = [grabber getDictFromURL:[NSString localizedStringWithFormat:@"%@%@",baseURL,sectionQuery]];    
     
     if (sectionResult) {
         if (self.sections == nil) {
@@ -106,16 +106,11 @@
     myUserName = [defaults stringForKey:@"username"];
     myPassword = [defaults stringForKey:@"password"];
     myBaseUrl = [defaults stringForKey:@"baseURL"];
-    NSLog(@"user: %@", myUserName);
-    NSLog(@"pass: %@", myPassword);
-    NSLog(@"base: %@", myBaseUrl);
     
     // Override point for customization after application launch.
     // Add the navigation controller's view to the window and display.
-    if (myUserName && myPassword && myBaseUrl) {
 
-        [self populateSections];
-    }
+    [self populateSections];
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
@@ -146,12 +141,12 @@
     myUserName = [defaults stringForKey:@"username"];
     myPassword = [defaults stringForKey:@"password"];
     myBaseUrl = [defaults stringForKey:@"baseURL"];
+    
     self.sections = nil;
-    if (myUserName && myPassword && myBaseUrl) {
-        [self populateSections];
-        self.window.rootViewController = self.navigationController;
-        [self.window makeKeyAndVisible];
-    }
+    [self populateSections];
+    //[self.navigationController reloadInputViews];
+    //[self.window.rootViewController reloadInputViews];
+    [self.window.rootViewController loadView];
     //self.engine.antiGrav = [defaults boolForKey: @"antigravity"];
     /*
      Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
