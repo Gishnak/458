@@ -76,11 +76,8 @@
 {
     [super viewDidDisappear:animated];
 }
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return YES;
 }
 
 #pragma mark - Table view data source
@@ -175,9 +172,11 @@
     AssignmentPicker *aPicker = [[AssignmentPicker alloc] init];
     aPicker.title = @"Assignments";
     aPicker.enrollment = enrollment;
-    DetailContainer *dt = [[appDelegate splitViewController].viewControllers objectAtIndex: 1];
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-    [dt setViewController:aPicker];
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        DetailContainer *dt = [[appDelegate splitViewController].viewControllers objectAtIndex: 1];
+        [dt setViewController:aPicker];
+    }
     else
     [self.navigationController pushViewController:aPicker animated:YES];
     [aPicker release];

@@ -9,8 +9,6 @@
 #import "GradebookV2AppDelegate.h"
 
 #import "RootViewController.h"
-#import "DetailViewController.h"
-#import "SectionPicker.h"
 #import "Section.h"
 #import "Enrollment.h"
 #import "Assignment.h"
@@ -27,9 +25,13 @@
 
 @synthesize splitViewController=_splitViewController;
 
-@synthesize rootViewController=_rootViewController;
+@synthesize sp = _sp;
 
-@synthesize detailViewController=_detailViewController;
+@synthesize dc = _dc;
+
+@synthesize nc = _nc;
+
+//@synthesize rootViewController=_rootViewController;
 
 @synthesize sections = _sections;
 
@@ -81,9 +83,12 @@
                     NSString *assnName = [userScoreDic objectForKey:@"name"];
                     Assignment *curAssign = [[Assignment alloc]initWithName:assnName];
                     curAssign.scores = [[NSMutableArray alloc]init];
+                    NSString *assnMaxScore = [userScoreDic objectForKey:@"max_points"];
                     NSArray *myScore = [userScoreDic objectForKey:@"scores"];
                     for (NSDictionary *scoreDict in myScore) {
-                        Score *curScore = [[Score alloc] initWithName:[scoreDict objectForKey:@"display_score"]];
+                        NSString* scoreVal = [scoreDict objectForKey:@"display_score"];
+
+                        Score *curScore = [[Score alloc] initWithName:[NSString localizedStringWithFormat:@"%@ / %@", scoreVal, assnMaxScore]];
                         [curAssign.scores addObject:curScore];
                         [curScore release];
                     }
@@ -123,23 +128,24 @@
     
     [self populateSections];
     
-    
 
     
-    SectionPicker *sp = [[SectionPicker alloc] init];
-    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:sp];
-    DetailContainer *dc = [[DetailContainer alloc]init];
+    
+    self.sp = [[SectionPicker alloc] init];
+    self.nc = [[UINavigationController alloc] initWithRootViewController:self.sp];
+    self.dc = [[DetailContainer alloc]init];
     
 
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         self.splitViewController = [[UISplitViewController alloc] init];
-            self.splitViewController.delegate = dc;
-        self.splitViewController.viewControllers = [NSArray arrayWithObjects:nc, dc, nil];
+        self.splitViewController.delegate = self.dc;
+        self.splitViewController.viewControllers = [NSArray arrayWithObjects:self.nc, self.dc, nil];
         [self.window addSubview:self.splitViewController.view];
+
     }
     else
     {
-        [self.window addSubview:nc.view];
+        [self.window addSubview:self.nc.view];
     }
     
     [self.window makeKeyAndVisible];
@@ -192,9 +198,13 @@
 - (void)dealloc
 {
     [_window release];
-   // [_splitViewController release];
-    [_rootViewController release];
-    [_detailViewController release];
+    //[_splitViewController release];
+    //[_dc release];
+    //[_sp release];
+    //[_nc release];
+    //[_rootViewController release];
+    [_sections release];
+   // [_detailViewController release];
     [super dealloc];
 }
 

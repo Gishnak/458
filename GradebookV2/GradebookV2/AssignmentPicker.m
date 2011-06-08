@@ -8,6 +8,7 @@
 
 #import "AssignmentPicker.h"
 #import "ScoreViewer.h"
+#import "Score.h"
 
 
 @implementation AssignmentPicker
@@ -101,11 +102,14 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        //cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier]autorelease];
     }
     
     Assignment* asn = [self.enrollment.assignments objectAtIndex:indexPath.row];
+    Score* scr = [asn.scores objectAtIndex:0];
     cell.textLabel.text = asn.name;
+    cell.detailTextLabel.text = scr.name;
     
     return cell;
 }
@@ -161,12 +165,12 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
-    Assignment *assn = (Assignment *)[self.enrollment.assignments objectAtIndex:indexPath.row];
+    /*Assignment *assn = (Assignment *)[self.enrollment.assignments objectAtIndex:indexPath.row];
     ScoreViewer *sViewer = [[ScoreViewer alloc] init];
     sViewer.title = @"Score";
     sViewer.assignment = assn;
     [self.navigationController pushViewController:sViewer animated:YES];
-    [sViewer release];
+    [sViewer release];*/
 }
 
 @end

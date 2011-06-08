@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SectionPicker.h"
+#import "DetailContainer.h"
 
 @class RootViewController;
 
@@ -22,11 +24,15 @@
 
 @property (nonatomic, retain) UIWindow *window;
 
-@property (nonatomic, retain) UISplitViewController *splitViewController;
+@property (nonatomic, assign) UISplitViewController *splitViewController;
 
-@property (nonatomic, retain) RootViewController *rootViewController;
+@property (nonatomic, assign) DetailContainer *dc;
 
-@property (nonatomic, retain) DetailViewController *detailViewController;
+@property (nonatomic, assign) SectionPicker *sp;
+
+@property (nonatomic, retain) UINavigationController *nc;
+
+//@property (nonatomic, retain) RootViewController *rootViewController;
 
 @property (nonatomic, assign) NSMutableArray *sections;
 

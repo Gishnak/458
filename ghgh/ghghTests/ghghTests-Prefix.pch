@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ghghTests' target in the 'ghghTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

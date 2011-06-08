@@ -26,7 +26,6 @@
 		7D382241139DDC9D0018F9D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D382240139DDC9D0018F9D4 /* main.m */; };
 		7D382244139DDC9D0018F9D4 /* GradebookV2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D382243139DDC9D0018F9D4 /* GradebookV2AppDelegate.m */; };
 		7D382247139DDC9D0018F9D4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D382245139DDC9D0018F9D4 /* MainWindow.xib */; };
-		7D38224A139DDC9D0018F9D4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D382249139DDC9D0018F9D4 /* DetailViewController.m */; };
 		7D38224D139DDC9D0018F9D4 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D38224B139DDC9D0018F9D4 /* DetailView.xib */; };
 		7D382250139DDC9D0018F9D4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D38224F139DDC9D0018F9D4 /* RootViewController.m */; };
 		7D382257139DDC9D0018F9D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D382233139DDC9D0018F9D4 /* UIKit.framework */; };
@@ -85,8 +84,6 @@
 		7D382242139DDC9D0018F9D4 /* GradebookV2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradebookV2AppDelegate.h; sourceTree = "<group>"; };
 		7D382243139DDC9D0018F9D4 /* GradebookV2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradebookV2AppDelegate.m; sourceTree = "<group>"; };
 		7D382246139DDC9D0018F9D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		7D382248139DDC9D0018F9D4 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		7D382249139DDC9D0018F9D4 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		7D38224C139DDC9D0018F9D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailView.xib; sourceTree = "<group>"; };
 		7D38224E139DDC9D0018F9D4 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		7D38224F139DDC9D0018F9D4 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
@@ -188,8 +185,6 @@
 				7D382242139DDC9D0018F9D4 /* GradebookV2AppDelegate.h */,
 				7D382243139DDC9D0018F9D4 /* GradebookV2AppDelegate.m */,
 				7D382245139DDC9D0018F9D4 /* MainWindow.xib */,
-				7D382248139DDC9D0018F9D4 /* DetailViewController.h */,
-				7D382249139DDC9D0018F9D4 /* DetailViewController.m */,
 				7D38224B139DDC9D0018F9D4 /* DetailView.xib */,
 				7D38224E139DDC9D0018F9D4 /* RootViewController.h */,
 				7D38224F139DDC9D0018F9D4 /* RootViewController.m */,
@@ -343,7 +338,6 @@
 			files = (
 				7D382241139DDC9D0018F9D4 /* main.m in Sources */,
 				7D382244139DDC9D0018F9D4 /* GradebookV2AppDelegate.m in Sources */,
-				7D38224A139DDC9D0018F9D4 /* DetailViewController.m in Sources */,
 				7D382250139DDC9D0018F9D4 /* RootViewController.m in Sources */,
 				7D382271139DDE6B0018F9D4 /* MemoryHound.m in Sources */,
 				7D382275139DDE9A0018F9D4 /* DetailContainer.m in Sources */,
